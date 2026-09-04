@@ -1,348 +1,1740 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Service Details | LifeV24Care Hospital Chandigarh</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    @keyframes fadeIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
-    .animate-fadeIn { animation: fadeIn 0.2s ease-out forwards; }
-  </style>
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-100 selection:text-cyan-900">
-  
-  <div class="bg-[#1b2538] text-gray-300 text-xs py-2.5 px-4 border-b border-slate-700/50">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-4">
-        <a href="mailto:info@lifev24care.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i>
-          <span>info@lifev24care.com</span>
-        </a>
-        <span class="text-slate-600">|</span>
-        <div class="flex items-center gap-1.5">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i>
-          <span>Sector 34, Chandigarh</span>
-        </div>
-      </div>
-      <div class="flex items-center gap-3">
-        <span class="text-slate-400">Follow Us:</span>
-        <div class="flex gap-2 text-slate-300">
-          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="facebook" class="w-3.5 h-3.5"></i></a>
-          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="twitter" class="w-3.5 h-3.5"></i></a>
-          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="linkedin" class="w-3.5 h-3.5"></i></a>
-          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="instagram" class="w-3.5 h-3.5"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2.5 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0298b9] to-[#0ea5e9] text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
-          <i data-lucide="activity" class="w-6 h-6"></i>
-        </div>
-        <div>
-          <span class="text-xl font-bold text-slate-900 tracking-tight block leading-none">
-            LifeV<span class="text-[#0298b9]">24</span>Care
-          </span>
-          <span class="text-[10px] font-semibold tracking-widest text-slate-400 uppercase block mt-0.5">HOSPITAL CHANDIGARH</span>
-        </div>
-      </a>
-
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
-        <a href="index.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Home</a>
-<a href="about.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">About Us</a>
-<a href="services.html" class="text-[#0298b9] font-bold border-b-2 border-[#0298b9] py-1">Services</a>
-<a href="gallery.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Gallery</a>
-<a href="contact.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Contact</a>
-
-      </nav>
-
-      <div class="hidden sm:flex items-center gap-5">
-        <a href="tel:+911722470000" class="flex items-center gap-2 font-bold text-sm text-slate-800 hover:text-[#0298b9] transition-colors">
-          <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-[#0298b9]">
-            <i data-lucide="phone" class="w-4 h-4"></i>
-          </div>
-          <span>+91 172 247 0000</span>
-        </a>
-        <button onclick="openBookingModal()" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-md shadow-cyan-500/20">
-          Book Now
-        </button>
-      </div>
-
-      <div class="flex sm:hidden items-center gap-2">
-        <button onclick="openBookingModal()" class="bg-[#0298b9] text-white px-3 py-1.5 rounded text-xs font-semibold">Book Now</button>
-        <button onclick="toggleMobileMenu()" class="p-2 text-slate-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
-      </div>
-    </div>
-
-    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
-      <a href="index.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Home</a>
-      <a href="about.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">About Us</a>
-      <a href="services.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Services</a>
-      <a href="gallery.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Gallery</a>
-      <a href="contact.html" class="block text-slate-800 font-semibold py-2">Contact</a>
-    </div>
-  </header>
-
-
-  <section class="relative bg-slate-900 text-white py-16 lg:py-20 overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80')"></div>
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/60"></div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3" id="sdTitle">24x7 Emergency Care</h1>
-      <div class="flex items-center justify-center gap-2 text-xs sm:text-sm text-cyan-300 font-semibold uppercase tracking-wider">
-        <a href="index.html" class="hover:text-white">Home</a>
-        <span>/</span>
-        <a href="services.html" class="hover:text-white">Service</a>
-        <span>/</span>
-        <span class="text-slate-300" id="sdCrumb">Emergency Care</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="py-20 bg-slate-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="grid lg:grid-cols-12 gap-10 items-start">
-        
-        <div class="lg:col-span-4 space-y-6">
-          <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md space-y-2">
-            <h3 class="text-lg font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100">All Departments</h3>
-            <a href="service-detail.html?dept=emergency" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-emergency"><span>24x7 Emergency Care</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=medicine" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-medicine"><span>General Medicine</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=surgery" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-surgery"><span>General & Laparoscopic Surgery</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=gynaecology" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-gynaecology"><span>Gynaecology & Obstetrics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=paediatrics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-paediatrics"><span>Paediatrics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=orthopaedics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-orthopaedics"><span>Orthopaedics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=ent" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-ent"><span>ENT (Ear, Nose & Throat)</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-            <a href="service-detail.html?dept=diagnostics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-diagnostics"><span>Diagnostic Lab & Radiology</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
-          </div>
-
-          <div class="bg-gradient-to-br from-red-600 to-amber-600 text-white rounded-3xl p-6 shadow-xl space-y-4">
-            <i data-lucide="ambulance" class="w-10 h-10"></i>
-            <h4 class="text-xl font-extrabold">Need Urgent Emergency Care?</h4>
-            <p class="text-xs text-red-50 leading-relaxed">Our emergency desk and trauma team are ready 24x7. Call our helpline immediately.</p>
-            <a href="tel:+911722470999" class="block text-center bg-white text-red-700 font-extrabold py-3 rounded-xl text-sm shadow-md hover:bg-red-50">
-              Call: +91 172 247 0999
-            </a>
-          </div>
-        </div>
-
-        <div class="lg:col-span-8 bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-md space-y-10">
-          <div>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Department Overview</h2>
-            <p class="text-slate-600 leading-relaxed text-sm sm:text-base" id="sdOverview">
-              Medical emergencies don't wait for morning, and neither do we. LifeV24Care Hospital's emergency department is staffed and equipped around the clock, every day of the year.
-            </p>
-          </div>
-
-          <div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4">What We Offer</h3>
-            <div class="space-y-3" id="sdChecklist">
-              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">24x7 duty doctor and nursing staff on site</span></div>
-              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">Emergency stabilization and trauma care unit</span></div>
-              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">In-house diagnostics for rapid assessment</span></div>
-            </div>
-          </div>
-
-          <div class="pt-4 flex items-center justify-between border-t border-slate-100">
-            <button onclick="openBookingModal()" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md">Book Consultation</button>
-            <a href="tel:+911722470000" class="text-[#0298b9] font-bold text-sm hover:underline flex items-center gap-1.5">
-              <i data-lucide="phone" class="w-4 h-4"></i>
-              <span>+91 172 247 0000</span>
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <script>
-    const deptDataMap = {
-      emergency: { title: "24x7 Emergency Care", crumb: "Emergency Care", overview: "Medical emergencies don't wait for morning, and neither do we. LifeV24Care Hospital's emergency department is staffed and equipped around the clock, every day of the year.", checklist: ["24x7 duty doctor and nursing staff on site", "Emergency stabilization and trauma care unit", "In-house diagnostics for rapid assessment"] },
-      medicine: { title: "General Medicine", crumb: "General Medicine", overview: "Our General Medicine department diagnoses and manages everyday illnesses, complex fever cases, respiratory infections, and chronic lifestyle diseases.", checklist: ["Comprehensive physical checkups & fever treatment", "Chronic disease management (Diabetes, Hypertension)", "Preventive health screenings and wellness plans"] },
-      surgery: { title: "General & Laparoscopic Surgery", crumb: "Laparoscopic Surgery", overview: "Our surgical team offers modern, minimally invasive laparoscopic operations as well as conventional general surgeries.", checklist: ["Minimally invasive laparoscopic hernia & gallbladder surgery", "Emergency appendectomy and abdominal operations", "Day-care surgical procedures with minimal pain"] },
-      gynaecology: { title: "Gynaecology & Obstetrics", crumb: "Gynaecology Care", overview: "Comprehensive healthcare for women at every stage of life - from adolescent health and antenatal pregnancy monitoring to safe delivery and gynaecological treatments.", checklist: ["Antenatal care & high-risk pregnancy monitoring", "Normal and caesarean delivery facility", "Treatment for PCOS, fibroids, and menstrual disorders"] },
-      paediatrics: { title: "Paediatrics", crumb: "Paediatric Care", overview: "Dedicated healthcare for newborns, infants, children, and adolescents delivered by experienced consultants.", checklist: ["Infant growth & developmental milestone tracking", "Complete childhood immunization & vaccination schedule", "Acute paediatric fever & infection management"] },
-      orthopaedics: { title: "Orthopaedics", crumb: "Orthopaedics", overview: "Advanced bone and joint care for fractures, sports injuries, joint pain, and musculoskeletal disorders.", checklist: ["24x7 emergency fracture reduction & plaster casting", "Arthroscopy & joint pain management", "Spine care & physical rehabilitation guidance"] },
-      ent: { title: "ENT (Ear, Nose & Throat)", crumb: "ENT Care", overview: "Specialized diagnosis and medical/surgical management for conditions affecting the ear, nose, throat, head, and neck.", checklist: ["Hearing assessment & ear infection treatment", "Sinusitis & nasal blockage management", "Tonsils, adenoids & throat disorder treatment"] },
-      diagnostics: { title: "Diagnostic Lab & Radiology", crumb: "Diagnostic Lab", overview: "Fully equipped in-house clinical laboratory and digital imaging center delivering fast, accurate reports 24x7.", checklist: ["24x7 blood tests, pathology & biochemistry", "Digital X-Ray & ECG reporting", "Fast turnaround time for emergency diagnosis"] }
-    };
-
-    document.addEventListener("DOMContentLoaded", function() {
-      const params = new URLSearchParams(window.location.search);
-      const key = params.get('dept') || 'emergency';
-      const data = deptDataMap[key] || deptDataMap.emergency;
-
-      document.getElementById('sdTitle').innerText = data.title;
-      document.getElementById('sdCrumb').innerText = data.crumb;
-      document.getElementById('sdOverview').innerText = data.overview;
-
-      const linkEl = document.getElementById('link-' + key);
-      if (linkEl) {
-        linkEl.className = "flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold bg-[#0298b9] text-white shadow-md";
-      }
-
-      let chkHtml = "";
-      data.checklist.forEach(item => {
-        chkHtml += `<div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">${item}</span></div>`;
-      });
-      document.getElementById('sdChecklist').innerHTML = chkHtml;
-
-      if (window.lucide) { lucide.createIcons(); }
-    });
-  </script>
-
-  
-  <footer id="footer" class="bg-[#061826] text-slate-300 pt-16 pb-8 border-t border-slate-800/80 font-sans">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
-        
-        <div class="space-y-5">
-          <a href="index.html" class="flex items-center gap-2.5 group">
-            <div class="w-9 h-9 rounded-xl bg-[#0298b9] text-white flex items-center justify-center font-bold shadow-md">
-              <i data-lucide="activity" class="w-5 h-5"></i>
-            </div>
-            <span class="text-xl font-bold text-white tracking-tight">LifeV<span class="text-[#0298b9]">24</span>Care</span>
-          </a>
-          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
-            Chandigarh's round-the-clock multispecialty hospital - care that's always open, always ready.
-          </p>
-          <div class="flex items-center gap-2.5 pt-2">
-            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="twitter" class="w-4 h-4"></i></a>
-            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
-            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
-            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-base mb-6">Useful Links</h4>
-          <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
-            <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
-            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Our Services</a></li>
-            <li><a href="gallery.html" class="hover:text-cyan-400 transition-colors">Photo Gallery</a></li>
-            <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
-            <li><button onclick="openBookingModal()" class="hover:text-cyan-400 transition-colors text-left">Book Appointment</button></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-base mb-6">Our Services</h4>
-          <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
-            <li><button onclick="openBookingModal('24x7 Emergency Care')" class="hover:text-cyan-400 transition-colors text-left">24x7 Emergency Care</button></li>
-            <li><button onclick="openBookingModal('General Medicine')" class="hover:text-cyan-400 transition-colors text-left">General Medicine</button></li>
-            <li><button onclick="openBookingModal('General & Laparoscopic Surgery')" class="hover:text-cyan-400 transition-colors text-left">General & Laparoscopic Surgery</button></li>
-            <li><button onclick="openBookingModal('Gynaecology & Obstetrics')" class="hover:text-cyan-400 transition-colors text-left">Gynaecology & Obstetrics</button></li>
-            <li><button onclick="openBookingModal('Paediatrics')" class="hover:text-cyan-400 transition-colors text-left">Paediatrics</button></li>
-            <li><button onclick="openBookingModal('Diagnostic Lab')" class="hover:text-cyan-400 transition-colors text-left">Diagnostic Lab</button></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="text-white font-bold text-base mb-6">Newsletter Signup</h4>
-          <form onsubmit="handleSubscribe(event)" class="space-y-4">
-            <div class="flex items-center overflow-hidden rounded-lg border border-slate-700/80 bg-[#0d2235]">
-              <input type="email" required placeholder="Enter your Email..." id="newsletterEmail" class="w-full bg-transparent px-4 py-3 text-xs text-white placeholder-slate-400 focus:outline-none" />
-              <button type="submit" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-4 py-3 font-bold flex items-center justify-center transition-colors shadow-md flex-shrink-0">
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </button>
-            </div>
-            <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer">
-              <input type="checkbox" checked required class="rounded border-slate-700 bg-slate-900 text-[#7c3aed] focus:ring-0" />
-              <span>I agree to the <a href="index.html#" class="underline text-slate-300 hover:text-cyan-400">Privacy Policy</a>.</span>
-            </label>
-            <p id="subscribeMsg" class="hidden text-xs text-emerald-400 font-semibold pt-1">Thank you for subscribing!</p>
-          </form>
-        </div>
-
-      </div>
-
-      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-        <p>© 2026 LifeV24Care Hospital All Rights Reserved by site</p>
-        <div class="flex items-center gap-3">
-          <a href="index.html#" class="hover:text-slate-300">Privacy Policy</a>
-          <span>|</span>
-          <a href="index.html#" class="hover:text-slate-300">Term of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <div id="bookingModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm animate-fadeIn">
-    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100">
-      <button onclick="closeBookingModal()" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700">✕</button>
-      
-      <div id="modalFormContent">
-        <span class="text-[#0298b9] text-xs font-bold uppercase tracking-wider">Book Consultation</span>
-        <h3 class="text-2xl font-extrabold text-slate-900 mt-1">LifeV24Care Appointment</h3>
-        <form onsubmit="submitBookingForm(event)" class="space-y-3 mt-4">
-          <input type="text" required placeholder="Patient Full Name" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
-          <input type="tel" required id="patientPhone" placeholder="Phone Number" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
-          <select id="modalDeptSelect" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]">
-            <option value="24x7 Emergency Care">24x7 Emergency Care</option>
-            <option value="General Medicine">General Medicine</option>
-            <option value="General & Laparoscopic Surgery">General & Laparoscopic Surgery</option>
-            <option value="Gynaecology & Obstetrics">Gynaecology & Obstetrics</option>
-            <option value="Diagnostic Lab">Diagnostic Lab</option>
-            <option value="Paediatrics">Paediatrics</option>
-            <option value="Orthopaedics">Orthopaedics</option>
-          </select>
-          <input type="date" required class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
-          <button type="submit" class="w-full bg-[#0298b9] hover:bg-[#00829f] text-white py-3 rounded-xl font-bold text-sm shadow-md transition-colors">
-            Confirm Appointment Request
-          </button>
-        </form>
-      </div>
-
-      <div id="modalSuccessContent" class="hidden py-10 text-center space-y-4">
-        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
-        <h3 class="text-2xl font-bold text-slate-900">Appointment Requested!</h3>
-        <p class="text-sm text-slate-600">Our desk will call you at <span id="displayPhone" class="font-semibold"></span> shortly.</p>
-      </div>
-    </div>
-  </div>
-
-  <script>
-    function openBookingModal(dept) {
-      if (dept) { document.getElementById('modalDeptSelect').value = dept; }
-      document.getElementById('bookingModal').classList.remove('hidden');
-    }
-    function closeBookingModal() {
-      document.getElementById('bookingModal').classList.add('hidden');
-      document.getElementById('modalFormContent').classList.remove('hidden');
-      document.getElementById('modalSuccessContent').classList.add('hidden');
-    }
-    function submitBookingForm(e) {
-      e.preventDefault();
-      const phone = document.getElementById('patientPhone').value;
-      document.getElementById('displayPhone').innerText = phone;
-      document.getElementById('modalFormContent').classList.add('hidden');
-      document.getElementById('modalSuccessContent').classList.remove('hidden');
-      setTimeout(() => { closeBookingModal(); }, 2500);
-    }
-    function toggleMobileMenu() {
-      document.getElementById('mobileMenu').classList.toggle('hidden');
-    }
-    function handleSubscribe(e) {
-      e.preventDefault();
-      document.getElementById('newsletterEmail').value = '';
-      document.getElementById('subscribeMsg').classList.remove('hidden');
-      setTimeout(() => { document.getElementById('subscribeMsg').classList.add('hidden'); }, 4000);
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-      if (window.lucide) { lucide.createIcons(); }
-    });
-  </script>
-
-</body>
-</html>
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" class="scroll-smooth">
+
+
+
+
+<head>
+
+
+
+
+  <meta charset="UTF-8" />
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+
+
+  <title>Service Details | LifeV24Care Hospital Delhi</title>
+
+
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+
+
+
+  <style>
+
+
+
+
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+
+
+
+    @keyframes fadeIn { from { opacity: 0; transform: scale(0.97); } to { opacity: 1; transform: scale(1); } }
+
+
+
+
+    .animate-fadeIn { animation: fadeIn 0.2s ease-out forwards; }
+
+
+
+
+  </style>
+
+
+
+
+</head>
+
+
+
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-100 selection:text-cyan-900">
+
+
+
+
+  
+
+
+
+
+  <div class="bg-[#1b2538] text-gray-300 text-xs py-2.5 px-4 border-b border-slate-700/50">
+
+
+
+
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+
+
+
+
+      <div class="flex items-center gap-4">
+
+
+
+
+        <a href="mailto:info@lifev24care.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+
+
+
+
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i>
+
+
+
+
+          <span>info@lifev24care.com</span>
+
+
+
+
+        </a>
+
+
+
+
+        <span class="text-slate-600">|</span>
+
+
+
+
+        <div class="flex items-center gap-1.5">
+
+
+
+
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i>
+
+
+
+
+          <span>Sector 34, Delhi</span>
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+      <div class="flex items-center gap-3">
+
+
+
+
+        <span class="text-slate-400">Follow Us:</span>
+
+
+
+
+        <div class="flex gap-2 text-slate-300">
+
+
+
+
+          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="facebook" class="w-3.5 h-3.5"></i></a>
+
+
+
+
+          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="twitter" class="w-3.5 h-3.5"></i></a>
+
+
+
+
+          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="linkedin" class="w-3.5 h-3.5"></i></a>
+
+
+
+
+          <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="instagram" class="w-3.5 h-3.5"></i></a>
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+
+
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+
+
+
+
+      <a href="index.html" class="flex items-center gap-2.5 group">
+
+
+
+
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0298b9] to-[#0ea5e9] text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+
+
+
+
+          <i data-lucide="activity" class="w-6 h-6"></i>
+
+
+
+
+        </div>
+
+
+
+
+        <div>
+
+
+
+
+          <span class="text-xl font-bold text-slate-900 tracking-tight block leading-none">
+
+
+
+
+            LifeV<span class="text-[#0298b9]">24</span>Care
+
+
+
+
+          </span>
+
+
+
+
+          <span class="text-[10px] font-semibold tracking-widest text-slate-400 uppercase block mt-0.5">HOSPITAL CHANDIGARH</span>
+
+
+
+
+        </div>
+
+
+
+
+      </a>
+
+
+
+
+
+
+
+
+
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+
+
+
+
+        <a href="index.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Home</a>
+
+
+
+
+<a href="about.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">About Us</a>
+
+
+
+
+<a href="services.html" class="text-[#0298b9] font-bold border-b-2 border-[#0298b9] py-1">Services</a>
+
+
+
+
+<a href="gallery.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Gallery</a>
+
+
+
+
+<a href="contact.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Contact</a>
+
+
+
+
+
+
+
+
+
+      </nav>
+
+
+
+
+
+
+
+
+
+      <div class="hidden sm:flex items-center gap-5">
+
+
+
+
+        <a href="tel:+911722470000" class="flex items-center gap-2 font-bold text-sm text-slate-800 hover:text-[#0298b9] transition-colors">
+
+
+
+
+          <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-[#0298b9]">
+
+
+
+
+            <i data-lucide="phone" class="w-4 h-4"></i>
+
+
+
+
+          </div>
+
+
+
+
+          <span>+91 172 247 0000</span>
+
+
+
+
+        </a>
+
+
+
+
+        <button onclick="openBookingModal()" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-md shadow-cyan-500/20">
+
+
+
+
+          Book Now
+
+
+
+
+        </button>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="flex sm:hidden items-center gap-2">
+
+
+
+
+        <button onclick="openBookingModal()" class="bg-[#0298b9] text-white px-3 py-1.5 rounded text-xs font-semibold">Book Now</button>
+
+
+
+
+        <button onclick="toggleMobileMenu()" class="p-2 text-slate-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+
+
+
+
+      <a href="index.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Home</a>
+
+
+
+
+      <a href="about.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">About Us</a>
+
+
+
+
+      <a href="services.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Services</a>
+
+
+
+
+      <a href="gallery.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Gallery</a>
+
+
+
+
+      <a href="contact.html" class="block text-slate-800 font-semibold py-2">Contact</a>
+
+
+
+
+    </div>
+
+
+
+
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section class="relative bg-slate-900 text-white py-16 lg:py-20 overflow-hidden">
+
+
+
+
+    <div class="absolute inset-0 bg-cover bg-center opacity-25" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80')"></div>
+
+
+
+
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/60"></div>
+
+
+
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+
+
+
+
+      <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-3" id="sdTitle">24x7 Emergency Care</h1>
+
+
+
+
+      <div class="flex items-center justify-center gap-2 text-xs sm:text-sm text-cyan-300 font-semibold uppercase tracking-wider">
+
+
+
+
+        <a href="index.html" class="hover:text-white">Home</a>
+
+
+
+
+        <span>/</span>
+
+
+
+
+        <a href="services.html" class="hover:text-white">Service</a>
+
+
+
+
+        <span>/</span>
+
+
+
+
+        <span class="text-slate-300" id="sdCrumb">Emergency Care</span>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <section class="py-20 bg-slate-50">
+
+
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+
+
+
+      <div class="grid lg:grid-cols-12 gap-10 items-start">
+
+
+
+
+        
+
+
+
+
+        <div class="lg:col-span-4 space-y-6">
+
+
+
+
+          <div class="bg-white rounded-3xl p-6 border border-slate-100 shadow-md space-y-2">
+
+
+
+
+            <h3 class="text-lg font-bold text-slate-900 mb-4 pb-3 border-b border-slate-100">All Departments</h3>
+
+
+
+
+            <a href="service-detail.html?dept=emergency" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-emergency"><span>24x7 Emergency Care</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=medicine" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-medicine"><span>General Medicine</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=surgery" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-surgery"><span>General & Laparoscopic Surgery</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=gynaecology" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-gynaecology"><span>Gynaecology & Obstetrics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=paediatrics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-paediatrics"><span>Paediatrics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=orthopaedics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-orthopaedics"><span>Orthopaedics</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=ent" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-ent"><span>ENT (Ear, Nose & Throat)</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="service-detail.html?dept=diagnostics" class="flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold hover:bg-cyan-50" id="link-diagnostics"><span>Diagnostic Lab & Radiology</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="bg-gradient-to-br from-red-600 to-amber-600 text-white rounded-3xl p-6 shadow-xl space-y-4">
+
+
+
+
+            <i data-lucide="ambulance" class="w-10 h-10"></i>
+
+
+
+
+            <h4 class="text-xl font-extrabold">Need Urgent Emergency Care?</h4>
+
+
+
+
+            <p class="text-xs text-red-50 leading-relaxed">Our emergency desk and trauma team are ready 24x7. Call our helpline immediately.</p>
+
+
+
+
+            <a href="tel:+911722470999" class="block text-center bg-white text-red-700 font-extrabold py-3 rounded-xl text-sm shadow-md hover:bg-red-50">
+
+
+
+
+              Call: +91 172 247 0999
+
+
+
+
+            </a>
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="lg:col-span-8 bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-md space-y-10">
+
+
+
+
+          <div>
+
+
+
+
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">Department Overview</h2>
+
+
+
+
+            <p class="text-slate-600 leading-relaxed text-sm sm:text-base" id="sdOverview">
+
+
+
+
+              Medical emergencies don't wait for morning, and neither do we. LifeV24Care Hospital's emergency department is staffed and equipped around the clock, every day of the year.
+
+
+
+
+            </p>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div>
+
+
+
+
+            <h3 class="text-xl font-bold text-slate-900 mb-4">What We Offer</h3>
+
+
+
+
+            <div class="space-y-3" id="sdChecklist">
+
+
+
+
+              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">24x7 duty doctor and nursing staff on site</span></div>
+
+
+
+
+              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">Emergency stabilization and trauma care unit</span></div>
+
+
+
+
+              <div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">In-house diagnostics for rapid assessment</span></div>
+
+
+
+
+            </div>
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="pt-4 flex items-center justify-between border-t border-slate-100">
+
+
+
+
+            <button onclick="openBookingModal()" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-7 py-3 rounded-xl font-bold text-sm shadow-md">Book Consultation</button>
+
+
+
+
+            <a href="tel:+911722470000" class="text-[#0298b9] font-bold text-sm hover:underline flex items-center gap-1.5">
+
+
+
+
+              <i data-lucide="phone" class="w-4 h-4"></i>
+
+
+
+
+              <span>+91 172 247 0000</span>
+
+
+
+
+            </a>
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+
+    const deptDataMap = {
+
+
+
+
+      emergency: { title: "24x7 Emergency Care", crumb: "Emergency Care", overview: "Medical emergencies don't wait for morning, and neither do we. LifeV24Care Hospital's emergency department is staffed and equipped around the clock, every day of the year.", checklist: ["24x7 duty doctor and nursing staff on site", "Emergency stabilization and trauma care unit", "In-house diagnostics for rapid assessment"] },
+
+
+
+
+      medicine: { title: "General Medicine", crumb: "General Medicine", overview: "Our General Medicine department diagnoses and manages everyday illnesses, complex fever cases, respiratory infections, and chronic lifestyle diseases.", checklist: ["Comprehensive physical checkups & fever treatment", "Chronic disease management (Diabetes, Hypertension)", "Preventive health screenings and wellness plans"] },
+
+
+
+
+      surgery: { title: "General & Laparoscopic Surgery", crumb: "Laparoscopic Surgery", overview: "Our surgical team offers modern, minimally invasive laparoscopic operations as well as conventional general surgeries.", checklist: ["Minimally invasive laparoscopic hernia & gallbladder surgery", "Emergency appendectomy and abdominal operations", "Day-care surgical procedures with minimal pain"] },
+
+
+
+
+      gynaecology: { title: "Gynaecology & Obstetrics", crumb: "Gynaecology Care", overview: "Comprehensive healthcare for women at every stage of life - from adolescent health and antenatal pregnancy monitoring to safe delivery and gynaecological treatments.", checklist: ["Antenatal care & high-risk pregnancy monitoring", "Normal and caesarean delivery facility", "Treatment for PCOS, fibroids, and menstrual disorders"] },
+
+
+
+
+      paediatrics: { title: "Paediatrics", crumb: "Paediatric Care", overview: "Dedicated healthcare for newborns, infants, children, and adolescents delivered by experienced consultants.", checklist: ["Infant growth & developmental milestone tracking", "Complete childhood immunization & vaccination schedule", "Acute paediatric fever & infection management"] },
+
+
+
+
+      orthopaedics: { title: "Orthopaedics", crumb: "Orthopaedics", overview: "Advanced bone and joint care for fractures, sports injuries, joint pain, and musculoskeletal disorders.", checklist: ["24x7 emergency fracture reduction & plaster casting", "Arthroscopy & joint pain management", "Spine care & physical rehabilitation guidance"] },
+
+
+
+
+      ent: { title: "ENT (Ear, Nose & Throat)", crumb: "ENT Care", overview: "Specialized diagnosis and medical/surgical management for conditions affecting the ear, nose, throat, head, and neck.", checklist: ["Hearing assessment & ear infection treatment", "Sinusitis & nasal blockage management", "Tonsils, adenoids & throat disorder treatment"] },
+
+
+
+
+      diagnostics: { title: "Diagnostic Lab & Radiology", crumb: "Diagnostic Lab", overview: "Fully equipped in-house clinical laboratory and digital imaging center delivering fast, accurate reports 24x7.", checklist: ["24x7 blood tests, pathology & biochemistry", "Digital X-Ray & ECG reporting", "Fast turnaround time for emergency diagnosis"] }
+
+
+
+
+    };
+
+
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+
+
+
+      const params = new URLSearchParams(window.location.search);
+
+
+
+
+      const key = params.get('dept') || 'emergency';
+
+
+
+
+      const data = deptDataMap[key] || deptDataMap.emergency;
+
+
+
+
+
+
+
+
+
+      document.getElementById('sdTitle').innerText = data.title;
+
+
+
+
+      document.getElementById('sdCrumb').innerText = data.crumb;
+
+
+
+
+      document.getElementById('sdOverview').innerText = data.overview;
+
+
+
+
+
+
+
+
+
+      const linkEl = document.getElementById('link-' + key);
+
+
+
+
+      if (linkEl) {
+
+
+
+
+        linkEl.className = "flex items-center justify-between p-3 rounded-xl text-xs sm:text-sm font-semibold bg-[#0298b9] text-white shadow-md";
+
+
+
+
+      }
+
+
+
+
+
+
+
+
+
+      let chkHtml = "";
+
+
+
+
+      data.checklist.forEach(item => {
+
+
+
+
+        chkHtml += `<div class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5"></i><span class="text-sm font-semibold text-slate-800">${item}</span></div>`;
+
+
+
+
+      });
+
+
+
+
+      document.getElementById('sdChecklist').innerHTML = chkHtml;
+
+
+
+
+
+
+
+
+
+      if (window.lucide) { lucide.createIcons(); }
+
+
+
+
+    });
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  <footer id="footer" class="bg-[#061826] text-slate-300 pt-16 pb-8 border-t border-slate-800/80 font-sans">
+
+
+
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
+
+
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
+
+
+
+
+        
+
+
+
+
+        <div class="space-y-5">
+
+
+
+
+          <a href="index.html" class="flex items-center gap-2.5 group">
+
+
+
+
+            <div class="w-9 h-9 rounded-xl bg-[#0298b9] text-white flex items-center justify-center font-bold shadow-md">
+
+
+
+
+              <i data-lucide="activity" class="w-5 h-5"></i>
+
+
+
+
+            </div>
+
+
+
+
+            <span class="text-xl font-bold text-white tracking-tight">LifeV<span class="text-[#0298b9]">24</span>Care</span>
+
+
+
+
+          </a>
+
+
+
+
+          <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
+
+
+
+
+            Delhi's round-the-clock multispecialty hospital - care that's always open, always ready.
+
+
+
+
+          </p>
+
+
+
+
+          <div class="flex items-center gap-2.5 pt-2">
+
+
+
+
+            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+
+
+
+
+            <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div>
+
+
+
+
+          <h4 class="text-white font-bold text-base mb-6">Useful Links</h4>
+
+
+
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
+
+
+
+
+            <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+
+
+
+
+            <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Our Services</a></li>
+
+
+
+
+            <li><a href="gallery.html" class="hover:text-cyan-400 transition-colors">Photo Gallery</a></li>
+
+
+
+
+            <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+
+
+
+
+            <li><button onclick="openBookingModal()" class="hover:text-cyan-400 transition-colors text-left">Book Appointment</button></li>
+
+
+
+
+          </ul>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div>
+
+
+
+
+          <h4 class="text-white font-bold text-base mb-6">Our Services</h4>
+
+
+
+
+          <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
+
+
+
+
+            <li><button onclick="openBookingModal('24x7 Emergency Care')" class="hover:text-cyan-400 transition-colors text-left">24x7 Emergency Care</button></li>
+
+
+
+
+            <li><button onclick="openBookingModal('General Medicine')" class="hover:text-cyan-400 transition-colors text-left">General Medicine</button></li>
+
+
+
+
+            <li><button onclick="openBookingModal('General & Laparoscopic Surgery')" class="hover:text-cyan-400 transition-colors text-left">General & Laparoscopic Surgery</button></li>
+
+
+
+
+            <li><button onclick="openBookingModal('Gynaecology & Obstetrics')" class="hover:text-cyan-400 transition-colors text-left">Gynaecology & Obstetrics</button></li>
+
+
+
+
+            <li><button onclick="openBookingModal('Paediatrics')" class="hover:text-cyan-400 transition-colors text-left">Paediatrics</button></li>
+
+
+
+
+            <li><button onclick="openBookingModal('Diagnostic Lab')" class="hover:text-cyan-400 transition-colors text-left">Diagnostic Lab</button></li>
+
+
+
+
+          </ul>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div>
+
+
+
+
+          <h4 class="text-white font-bold text-base mb-6">Newsletter Signup</h4>
+
+
+
+
+          <form onsubmit="handleSubscribe(event)" class="space-y-4">
+
+
+
+
+            <div class="flex items-center overflow-hidden rounded-lg border border-slate-700/80 bg-[#0d2235]">
+
+
+
+
+              <input type="email" required placeholder="Enter your Email..." id="newsletterEmail" class="w-full bg-transparent px-4 py-3 text-xs text-white placeholder-slate-400 focus:outline-none" />
+
+
+
+
+              <button type="submit" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-4 py-3 font-bold flex items-center justify-center transition-colors shadow-md flex-shrink-0">
+
+
+
+
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
+
+
+
+              </button>
+
+
+
+
+            </div>
+
+
+
+
+            <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer">
+
+
+
+
+              <input type="checkbox" checked required class="rounded border-slate-700 bg-slate-900 text-[#7c3aed] focus:ring-0" />
+
+
+
+
+              <span>I agree to the <a href="index.html#" class="underline text-slate-300 hover:text-cyan-400">Privacy Policy</a>.</span>
+
+
+
+
+            </label>
+
+
+
+
+            <p id="subscribeMsg" class="hidden text-xs text-emerald-400 font-semibold pt-1">Thank you for subscribing!</p>
+
+
+
+
+          </form>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+
+
+
+
+        <p>© 2026 LifeV24Care Hospital All Rights Reserved by site</p>
+
+
+
+
+        <div class="flex items-center gap-3">
+
+
+
+
+          <a href="index.html#" class="hover:text-slate-300">Privacy Policy</a>
+
+
+
+
+          <span>|</span>
+
+
+
+
+          <a href="index.html#" class="hover:text-slate-300">Term of Service</a>
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <div id="bookingModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm animate-fadeIn">
+
+
+
+
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100">
+
+
+
+
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700">✕</button>
+
+
+
+
+      
+
+
+
+
+      <div id="modalFormContent">
+
+
+
+
+        <span class="text-[#0298b9] text-xs font-bold uppercase tracking-wider">Book Consultation</span>
+
+
+
+
+        <h3 class="text-2xl font-extrabold text-slate-900 mt-1">LifeV24Care Appointment</h3>
+
+
+
+
+        <form onsubmit="submitBookingForm(event)" class="space-y-3 mt-4">
+
+
+
+
+          <input type="text" required placeholder="Patient Full Name" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
+
+
+
+          <input type="tel" required id="patientPhone" placeholder="Phone Number" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
+
+
+
+          <select id="modalDeptSelect" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]">
+
+
+
+
+            <option value="24x7 Emergency Care">24x7 Emergency Care</option>
+
+
+
+
+            <option value="General Medicine">General Medicine</option>
+
+
+
+
+            <option value="General & Laparoscopic Surgery">General & Laparoscopic Surgery</option>
+
+
+
+
+            <option value="Gynaecology & Obstetrics">Gynaecology & Obstetrics</option>
+
+
+
+
+            <option value="Diagnostic Lab">Diagnostic Lab</option>
+
+
+
+
+            <option value="Paediatrics">Paediatrics</option>
+
+
+
+
+            <option value="Orthopaedics">Orthopaedics</option>
+
+
+
+
+          </select>
+
+
+
+
+          <input type="date" required class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
+
+
+
+          <button type="submit" class="w-full bg-[#0298b9] hover:bg-[#00829f] text-white py-3 rounded-xl font-bold text-sm shadow-md transition-colors">
+
+
+
+
+            Confirm Appointment Request
+
+
+
+
+          </button>
+
+
+
+
+        </form>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <div id="modalSuccessContent" class="hidden py-10 text-center space-y-4">
+
+
+
+
+        <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+
+
+
+
+        <h3 class="text-2xl font-bold text-slate-900">Appointment Requested!</h3>
+
+
+
+
+        <p class="text-sm text-slate-600">Our desk will call you at <span id="displayPhone" class="font-semibold"></span> shortly.</p>
+
+
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script>
+
+
+
+
+    function openBookingModal(dept) {
+
+
+
+
+      if (dept) { document.getElementById('modalDeptSelect').value = dept; }
+
+
+
+
+      document.getElementById('bookingModal').classList.remove('hidden');
+
+
+
+
+    }
+
+
+
+
+    function closeBookingModal() {
+
+
+
+
+      document.getElementById('bookingModal').classList.add('hidden');
+
+
+
+
+      document.getElementById('modalFormContent').classList.remove('hidden');
+
+
+
+
+      document.getElementById('modalSuccessContent').classList.add('hidden');
+
+
+
+
+    }
+
+
+
+
+    function submitBookingForm(e) {
+
+
+
+
+      e.preventDefault();
+
+
+
+
+      const phone = document.getElementById('patientPhone').value;
+
+
+
+
+      document.getElementById('displayPhone').innerText = phone;
+
+
+
+
+      document.getElementById('modalFormContent').classList.add('hidden');
+
+
+
+
+      document.getElementById('modalSuccessContent').classList.remove('hidden');
+
+
+
+
+      setTimeout(() => { closeBookingModal(); }, 2500);
+
+
+
+
+    }
+
+
+
+
+    function toggleMobileMenu() {
+
+
+
+
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+
+
+
+
+    }
+
+
+
+
+    function handleSubscribe(e) {
+
+
+
+
+      e.preventDefault();
+
+
+
+
+      document.getElementById('newsletterEmail').value = '';
+
+
+
+
+      document.getElementById('subscribeMsg').classList.remove('hidden');
+
+
+
+
+      setTimeout(() => { document.getElementById('subscribeMsg').classList.add('hidden'); }, 4000);
+
+
+
+
+    }
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+
+
+
+
+      if (window.lucide) { lucide.createIcons(); }
+
+
+
+
+    });
+
+
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+</html>
+
+
+
+

@@ -1,773 +1,1546 @@
 <!DOCTYPE html>
+
 <html lang="en" class="scroll-smooth">
+
 <head>
+
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LifeV24Care Hospital | 24x7 Multispecialty Care Chandigarh</title>
+
+  <title>LifeV24Care Hospital | 24x7 Multispecialty Care Delhi</title>
+
   
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <script>
+
     tailwind.config = {
+
       theme: {
+
         extend: {
+
           colors: {
+
             brand: {
+
               teal: '#0298b9',
+
               tealDark: '#00829f',
+
               blue: '#0ea5e9',
+
               navy: '#0f172a',
+
               navyLight: '#1b2538'
+
             }
+
           }
+
         }
+
       }
+
     }
+
   </script>
+
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <script src="https://unpkg.com/lucide@latest"></script>
 
+
+
   <style>
+
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
     @keyframes fadeIn {
+
       from { opacity: 0; transform: scale(0.97); }
+
       to { opacity: 1; transform: scale(1); }
+
     }
+
     .animate-fadeIn { animation: fadeIn 0.2s ease-out forwards; }
+
   </style>
+
 </head>
+
 <body class="bg-white text-slate-800 antialiased selection:bg-cyan-100 selection:text-cyan-900">
 
+
+
   <!-- 1. TOP BAR -->
+
   <div class="bg-[#1b2538] text-gray-300 text-xs py-2.5 px-4 border-b border-slate-700/50">
+
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+
       <div class="flex items-center gap-4">
+
         <a href="mailto:info@lifev24care.com" class="flex items-center gap-1.5 hover:text-cyan-400 transition-colors">
+
           <i data-lucide="mail" class="w-3.5 h-3.5 text-cyan-400"></i>
+
           <span>info@lifev24care.com</span>
+
         </a>
+
         <span class="text-slate-600">|</span>
+
         <div class="flex items-center gap-1.5">
+
           <i data-lucide="map-pin" class="w-3.5 h-3.5 text-cyan-400"></i>
-          <span>Sector 34, Chandigarh</span>
+
+          <span>Sector 34, Delhi</span>
+
         </div>
+
       </div>
+
       <div class="flex items-center gap-3">
+
         <span class="text-slate-400">Follow Us:</span>
+
         <div class="flex gap-2 text-slate-300">
+
           <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="facebook" class="w-3.5 h-3.5"></i></a>
+
           <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="twitter" class="w-3.5 h-3.5"></i></a>
+
           <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="linkedin" class="w-3.5 h-3.5"></i></a>
+
           <a href="#" class="p-1 hover:text-cyan-400"><i data-lucide="instagram" class="w-3.5 h-3.5"></i></a>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
+
 
   <!-- NAVIGATION HEADER -->
+
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+
       <a href="index.html" class="flex items-center gap-2.5 group">
+
         <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0298b9] to-[#0ea5e9] text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">
+
           <i data-lucide="activity" class="w-6 h-6"></i>
+
         </div>
+
         <div>
+
           <span class="text-xl font-bold text-slate-900 tracking-tight block leading-none">
+
             LifeV<span class="text-[#0298b9]">24</span>Care
+
           </span>
+
           <span class="text-[10px] font-semibold tracking-widest text-slate-400 uppercase block mt-0.5">HOSPITAL CHANDIGARH</span>
+
         </div>
+
       </a>
 
+
+
       <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold">
+
         <a href="index.html" class="text-[#0298b9] font-bold border-b-2 border-[#0298b9] py-1">Home</a>
+
         <a href="about.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">About Us</a>
+
         <a href="services.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Services</a>
+
         <a href="gallery.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Gallery</a>
+
         <a href="contact.html" class="text-slate-700 hover:text-[#0298b9] transition-colors py-1">Contact</a>
+
       </nav>
 
+
+
       <div class="hidden sm:flex items-center gap-5">
+
         <a href="tel:+911722470000" class="flex items-center gap-2 font-bold text-sm text-slate-800 hover:text-[#0298b9] transition-colors">
+
           <div class="w-8 h-8 rounded-full bg-cyan-50 flex items-center justify-center text-[#0298b9]">
+
             <i data-lucide="phone" class="w-4 h-4"></i>
+
           </div>
+
           <span>+91 172 247 0000</span>
+
         </a>
+
         <button onclick="openBookingModal()" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-5 py-2.5 rounded-lg font-semibold text-sm transition-all shadow-md shadow-cyan-500/20">
+
           Book Now
+
         </button>
+
       </div>
+
+
 
       <div class="flex sm:hidden items-center gap-2">
+
         <button onclick="openBookingModal()" class="bg-[#0298b9] text-white px-3 py-1.5 rounded text-xs font-semibold">Book Now</button>
+
         <button onclick="toggleMobileMenu()" class="p-2 text-slate-700"><i data-lucide="menu" class="w-6 h-6"></i></button>
+
       </div>
+
     </div>
+
+
 
     <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+
       <a href="index.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Home</a>
+
       <a href="about.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">About Us</a>
+
       <a href="services.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Services</a>
+
       <a href="gallery.html" class="block text-slate-800 font-semibold py-2 border-b border-slate-100">Gallery</a>
+
       <a href="contact.html" class="block text-slate-800 font-semibold py-2">Contact</a>
+
     </div>
+
   </header>
 
+
+
   <!-- 2. HERO SECTION - STRICT LEFT ALIGNMENT -->
+
   <section class="relative bg-slate-900 text-white min-h-[620px] flex items-center overflow-hidden text-left">
+
     <div class="absolute inset-0 bg-cover bg-center opacity-35 scale-105 transition-transform duration-1000" style="background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1600&q=80')"></div>
+
     <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/90 to-slate-900/40"></div>
+
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-20 lg:py-28 w-full text-left">
+
       <div class="max-w-2xl space-y-6 text-left items-start flex flex-col justify-start">
+
         <div class="inline-flex items-center gap-2 bg-cyan-500/10 border border-cyan-400/30 px-3.5 py-1.5 rounded-full backdrop-blur-md self-start">
+
           <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
-          <span class="text-xs font-bold uppercase tracking-wider text-cyan-300">Chandigarh's Round-the-Clock Hospital</span>
+
+          <span class="text-xs font-bold uppercase tracking-wider text-cyan-300">Delhi's Round-the-Clock Hospital</span>
+
         </div>
+
         <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight text-left">
+
           Multispecialty Care. <br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-sky-200">Available Around the Clock.</span>
+
         </h1>
+
         <p class="text-slate-300 text-sm sm:text-base leading-relaxed text-left">
-          LifeV24Care Hospital brings together experienced doctors, modern diagnostics, and a genuinely 24x7 emergency team in Sector 34, Chandigarh.
+
+          LifeV24Care Hospital brings together experienced doctors, modern diagnostics, and a genuinely 24x7 emergency team in Sector 34, Delhi.
+
         </p>
+
         <div class="pt-4 flex flex-wrap items-center justify-start gap-4 text-left">
+
           <a href="services.html" class="bg-[#0298b9] hover:bg-[#00829f] text-white px-8 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-cyan-500/30 transition-all flex items-center gap-2">
+
             <span>Explore Our Services</span>
+
             <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
           </a>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 3. ABOUT SECTION - "Find Out About Us" -->
+
   <section class="py-20 bg-white">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
         
+
         <!-- Left Dual Overlapping Image Frames - Fixed Both High-Res Working Images -->
+
         <div class="lg:col-span-6 relative">
+
           <div class="grid grid-cols-2 gap-4">
+
             <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-slate-50 h-80">
+
               <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Doctor Consultation" class="w-full h-full object-cover" />
+
             </div>
+
             <div class="rounded-3xl overflow-hidden shadow-xl border-4 border-slate-50 h-80 mt-8">
+
               <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" alt="Specialist Doctor" class="w-full h-full object-cover" />
+
             </div>
+
           </div>
+
         </div>
 
+
+
         <div class="lg:col-span-6 space-y-6">
+
           <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block">Find Out About Us</span>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Chandigarh Healthcare That Never Closes</h2>
+
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Delhi Healthcare That Never Closes</h2>
+
           
+
           <div class="grid sm:grid-cols-2 gap-4 pt-2">
+
             <div class="p-4 rounded-2xl bg-cyan-50/50 border border-cyan-100/80 flex items-center gap-3">
+
               <span class="text-2xl">🏠</span>
+
               <div>
+
                 <h4 class="font-bold text-slate-900 text-sm">Free First Consultation</h4>
+
                 <p class="text-xs text-slate-500">For new patients & emergency check</p>
+
               </div>
+
             </div>
+
             <div class="p-4 rounded-2xl bg-cyan-50/50 border border-cyan-100/80 flex items-center gap-3">
+
               <span class="text-2xl">👍</span>
+
               <div>
+
                 <h4 class="font-bold text-slate-900 text-sm">5,000+ Happy Patients</h4>
-                <p class="text-xs text-slate-500">Trusted across Chandigarh</p>
+
+                <p class="text-xs text-slate-500">Trusted across Delhi</p>
+
               </div>
+
             </div>
+
           </div>
+
+
 
           <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-            LifeV24Care Hospital was founded on a simple idea: healthcare shouldn't run on office hours. Based in Sector 34, Chandigarh, we bring experienced doctors, modern diagnostics, and a genuinely 24x7 emergency team together under one roof - so whenever something comes up, day or night, we're already open.
+
+            LifeV24Care Hospital was founded on a simple idea: healthcare shouldn't run on office hours. Based in Sector 34, Delhi, we bring experienced doctors, modern diagnostics, and a genuinely 24x7 emergency team together under one roof - so whenever something comes up, day or night, we're already open.
+
           </p>
+
+
 
           <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+
             <a href="services.html" class="inline-flex items-center gap-2 bg-[#0298b9] hover:bg-[#00829f] text-white px-6 py-3 rounded-xl font-bold text-xs shadow-md">
+
               <span>Explore Our Services</span>
+
               <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
             </a>
+
+
 
             <!-- Doctor Signature Block -->
+
             <div class="flex items-center gap-3">
+
               <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Dr Devraj Sharma" class="w-11 h-11 rounded-full object-cover ring-2 ring-cyan-500" />
+
               <div>
+
                 <span class="text-xs font-bold text-slate-900 block">Dr. Devraj Sharma</span>
+
                 <span class="text-[10px] font-semibold text-[#0298b9] block">MD - Chief Medical Director</span>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 4. SERVICES SECTION - "Medical Services / Health care Services." -->
+
   <section class="py-20 bg-slate-50 border-t border-slate-100">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+
         <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block">Medical Services</span>
+
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Care Across Every Department, Any Hour</h2>
+
         <p class="text-slate-600 text-xs sm:text-sm">Round-the-clock clinical excellence mapped to your specific healthcare needs.</p>
+
       </div>
+
+
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+
         
+
         <!-- Card 1: 24x7 Emergency Care -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="monitor" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">24x7 Emergency Care</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Round-the-clock emergency team, on-call doctors, and ambulance support - always ready.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=emergency" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('24x7 Emergency Care')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
+
+
 
         <!-- Card 2: General Medicine -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="pill" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">General Medicine</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Diagnosis and treatment for everyday illness, infections, and chronic conditions.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=medicine" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('General Medicine')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
+
+
 
         <!-- Card 3: General & Laparoscopic Surgery -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="crosshair" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">General & Laparoscopic Surgery</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Modern surgical care for common and moderately complex procedures.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=surgery" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('General & Laparoscopic Surgery')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
+
+
 
         <!-- Card 4: Gynaecology & Obstetrics -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="stethoscope" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">Gynaecology & Obstetrics</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Complete women's health care, from prenatal checkups to delivery.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=gynaecology" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('Gynaecology & Obstetrics')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
+
+
 
         <!-- Card 5: Diagnostic Lab -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="microscope" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">Diagnostic Lab</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">In-house testing for fast, accurate results - because emergencies can't wait on outside labs.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=diagnostics" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('Diagnostic Lab')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
+
+
 
         <!-- Card 6: Paediatrics -->
+
         <div class="bg-white rounded-3xl p-7 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col justify-between">
+
           <div>
+
             <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-[#0298b9] flex items-center justify-center mb-6 group-hover:bg-[#0298b9] group-hover:text-white transition-colors">
+
               <i data-lucide="baby" class="w-7 h-7"></i>
+
             </div>
+
             <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[#0298b9] transition-colors">Paediatrics</h3>
+
             <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6">Gentle, specialized care for infants and children.</p>
+
           </div>
+
           <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+
             <a href="service-detail.html?dept=paediatrics" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>More details</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
             <button onclick="openBookingModal('Paediatrics')" class="bg-cyan-50 text-[#0298b9] hover:bg-[#0298b9] hover:text-white px-3 py-1 rounded text-xs font-semibold">Book</button>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 5. CASE STUDIES / GALLERY SECTION - "Latest Case Studies" -->
+
   <section class="py-20 bg-white">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+
         <div>
+
           <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block mb-1">Latest Projects</span>
+
           <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Inside LifeV24Care Hospital</h2>
+
         </div>
+
         <a href="gallery.html" class="inline-flex items-center gap-2 text-[#0298b9] font-bold text-sm hover:underline">
+
           <span>View Full Photo Gallery</span>
+
           <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
         </a>
+
       </div>
+
+
 
       <div class="grid md:grid-cols-3 gap-8">
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+
           <div class="relative h-64 overflow-hidden bg-slate-900">
+
             <img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80" alt="Diagnostic Equipment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+
             <div class="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur-md text-white px-4 py-2 rounded-xl">
+
               <h4 class="font-bold text-sm">Modern Diagnostic Equipment</h4>
+
             </div>
+
           </div>
+
         </div>
 
+
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+
           <div class="relative h-64 overflow-hidden bg-slate-900">
+
             <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" alt="Emergency Ward" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+
             <div class="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur-md text-white px-4 py-2 rounded-xl">
+
               <h4 class="font-bold text-sm">24x7 Emergency Ward</h4>
+
             </div>
+
           </div>
+
         </div>
 
+
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+
           <div class="relative h-64 overflow-hidden bg-slate-900">
+
             <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80" alt="Patient-First Care" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+
             <div class="absolute bottom-4 left-4 bg-slate-950/80 backdrop-blur-md text-white px-4 py-2 rounded-xl">
+
               <h4 class="font-bold text-sm">Patient-First Care</h4>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 6. DOCTORS SECTION - "Meet Specialist Doctors" -->
+
   <section class="py-20 bg-slate-50 border-t border-slate-100">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+
         <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block">Team Of Specialists</span>
+
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Meet Our Doctors</h2>
+
         <p class="text-slate-600 text-xs sm:text-sm">Verified consulting specialists dedicated to your health and recovery.</p>
+
       </div>
+
+
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
         
+
         <!-- Doctor 1 -->
+
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group p-5 text-center space-y-4">
+
           <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-cyan-500/20 shadow-md">
+
             <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr Devraj Sharma" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+
           </div>
+
           <div>
+
             <h3 class="font-bold text-slate-900 text-lg">Dr. Devraj Sharma</h3>
+
             <p class="text-xs font-bold text-[#0298b9] mt-0.5">General Medicine</p>
+
           </div>
+
           <div class="pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
+
             <a href="tel:+911722470000" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="phone" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>+91 172 247 0000</span>
+
             </a>
+
             <a href="mailto:devraj@lifev24care.com" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="mail" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>devraj@lifev24care.com</span>
+
             </a>
+
           </div>
+
         </div>
+
+
 
         <!-- Doctor 2 -->
+
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group p-5 text-center space-y-4">
+
           <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-cyan-500/20 shadow-md">
+
             <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=400&q=80" alt="Dr Ananya Rao" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+
           </div>
+
           <div>
+
             <h3 class="font-bold text-slate-900 text-lg">Dr. Ananya Rao</h3>
+
             <p class="text-xs font-bold text-[#0298b9] mt-0.5">Gynaecology & Obstetrics</p>
+
           </div>
+
           <div class="pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
+
             <a href="tel:+911722470001" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="phone" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>+91 172 247 0001</span>
+
             </a>
+
             <a href="mailto:ananya@lifev24care.com" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="mail" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>ananya@lifev24care.com</span>
+
             </a>
+
           </div>
+
         </div>
+
+
 
         <!-- Doctor 3 -->
+
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group p-5 text-center space-y-4">
+
           <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-cyan-500/20 shadow-md">
+
             <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="Dr Rajesh Verma" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+
           </div>
+
           <div>
+
             <h3 class="font-bold text-slate-900 text-lg">Dr. Rajesh Verma</h3>
+
             <p class="text-xs font-bold text-[#0298b9] mt-0.5">General & Laparoscopic Surgery</p>
+
           </div>
+
           <div class="pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
+
             <a href="tel:+911722470002" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="phone" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>+91 172 247 0002</span>
+
             </a>
+
             <a href="mailto:rajesh@lifev24care.com" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="mail" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>rajesh@lifev24care.com</span>
+
             </a>
+
           </div>
+
         </div>
+
+
 
         <!-- Doctor 4 -->
+
         <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group p-5 text-center space-y-4">
+
           <div class="w-32 h-32 mx-auto rounded-full overflow-hidden ring-4 ring-cyan-500/20 shadow-md">
+
             <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dr Simran Kaur" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+
           </div>
+
           <div>
+
             <h3 class="font-bold text-slate-900 text-lg">Dr. Simran Kaur</h3>
+
             <p class="text-xs font-bold text-[#0298b9] mt-0.5">Paediatrics</p>
+
           </div>
+
           <div class="pt-3 border-t border-slate-100 text-xs text-slate-600 space-y-1.5">
+
             <a href="tel:+911722470003" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="phone" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>+91 172 247 0003</span>
+
             </a>
+
             <a href="mailto:simran@lifev24care.com" class="flex items-center justify-center gap-1.5 hover:text-[#0298b9]">
+
               <i data-lucide="mail" class="w-3.5 h-3.5 text-[#0298b9]"></i>
+
               <span>simran@lifev24care.com</span>
+
             </a>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 7. VIDEO / FEATURE SECTION - "Hospital Medical" -->
+
   <section class="py-20 bg-white">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
         
+
         <div class="lg:col-span-6 relative">
+
           <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-slate-50 h-[420px]">
+
             <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80" alt="Hospital Tour" class="w-full h-full object-cover" />
+
             
+
             <!-- Glowing Play Button Overlay -->
+
             <button onclick="openVideoModal()" class="absolute inset-0 flex items-center justify-center bg-slate-950/30 hover:bg-slate-950/40 transition-colors group">
+
               <div class="w-20 h-20 rounded-full bg-[#0298b9] text-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform animate-pulse">
+
                 <i data-lucide="play" class="w-8 h-8 fill-current ml-1"></i>
+
               </div>
+
             </button>
+
           </div>
+
         </div>
+
+
 
         <div class="lg:col-span-6 space-y-6">
+
           <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block">Hospital Medical</span>
+
           <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Comprehensive Care, Built Around You. Available Day and Night.</h2>
 
+
+
           <!-- 6 Checklist Items (2 Columns of 3) -->
+
           <div class="grid sm:grid-cols-2 gap-4 pt-2">
+
             <div class="space-y-3 text-xs sm:text-sm font-semibold text-slate-800">
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>24x7 Emergency & OPD</span></div>
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>In-House Diagnostic Lab</span></div>
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>In-House Pharmacy</span></div>
+
             </div>
+
             <div class="space-y-3 text-xs sm:text-sm font-semibold text-slate-800">
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>Experienced Specialists</span></div>
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>Affordable, Transparent Pricing</span></div>
+
               <div class="flex items-center gap-2.5"><span class="text-emerald-500 text-base font-bold">✅</span> <span>Clean, Comfortable Patient Rooms</span></div>
+
             </div>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 8. TESTIMONIALS SECTION - "Comments" -->
+
   <section class="py-20 bg-slate-50 border-t border-slate-100">
+
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-8">
+
       <div>
+
         <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block mb-2">Testimonials</span>
+
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Comments</h2>
+
       </div>
+
+
 
       <div class="bg-white rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-xl relative">
+
         <div class="flex justify-center gap-1 text-amber-400 mb-4">
+
           ★ ★ ★ ★ ★
+
         </div>
+
         <p class="text-slate-700 text-sm sm:text-lg italic leading-relaxed max-w-2xl mx-auto">
+
           "When my mother needed urgent night care, LifeV24Care's emergency team attended to her within 2 minutes. Outstanding doctors and genuine 24x7 commitment."
+
         </p>
+
         <div class="mt-6">
+
           <span class="font-bold text-slate-900 block text-base">Davinder Singh</span>
+
           <span class="text-xs font-semibold text-[#0298b9]">Happy Patient</span>
+
         </div>
+
       </div>
+
     </div>
+
   </section>
+
+
 
   <!-- 9. BLOG SECTION - "Latest Blog Update" -->
+
   <section class="py-20 bg-white border-t border-slate-100">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+
         <span class="text-[#0298b9] font-bold uppercase tracking-wider text-xs block">Latest News and Blog</span>
+
         <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Latest Blog Update</h2>
+
         <p class="text-slate-600 text-xs sm:text-sm">Health tips, guidance, and medical insights from our clinical team.</p>
+
       </div>
+
+
 
       <div class="grid md:grid-cols-3 gap-8">
+
         
+
         <!-- Blog 1 -->
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+
           <div class="h-52 overflow-hidden bg-slate-900 relative">
+
             <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" alt="Blog 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+
             <span class="absolute top-4 left-4 bg-[#0298b9] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Health Care</span>
+
           </div>
+
           <div class="p-6 space-y-3">
+
             <span class="text-xs text-slate-400 font-medium">Aug 28, 2026</span>
+
             <h3 class="font-bold text-slate-900 text-base group-hover:text-[#0298b9] transition-colors leading-snug">
+
               When to Go to the ER vs. Book a Regular Appointment
+
             </h3>
+
           </div>
+
           <div class="p-6 pt-0">
+
             <a href="#" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>Read Article</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
           </div>
+
         </div>
+
+
 
         <!-- Blog 2 -->
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+
           <div class="h-52 overflow-hidden bg-slate-900 relative">
+
             <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=600&q=80" alt="Blog 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+
             <span class="absolute top-4 left-4 bg-[#0298b9] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Health Care</span>
+
           </div>
+
           <div class="p-6 space-y-3">
+
             <span class="text-xs text-slate-400 font-medium">Aug 24, 2026</span>
+
             <h3 class="font-bold text-slate-900 text-base group-hover:text-[#0298b9] transition-colors leading-snug">
+
               5 Signs Your Child's Fever Needs Immediate Attention
+
             </h3>
+
           </div>
+
           <div class="p-6 pt-0">
+
             <a href="#" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>Read Article</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
           </div>
+
         </div>
+
+
 
         <!-- Blog 3 -->
+
         <div class="bg-slate-50 rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all group flex flex-col justify-between">
+
           <div class="h-52 overflow-hidden bg-slate-900 relative">
+
             <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=600&q=80" alt="Blog 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+
             <span class="absolute top-4 left-4 bg-[#0298b9] text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Health Care</span>
+
           </div>
+
           <div class="p-6 space-y-3">
+
             <span class="text-xs text-slate-400 font-medium">Aug 18, 2026</span>
+
             <h3 class="font-bold text-slate-900 text-base group-hover:text-[#0298b9] transition-colors leading-snug">
+
               What to Expect During Your First Prenatal Visit
+
             </h3>
+
           </div>
+
           <div class="p-6 pt-0">
+
             <a href="#" class="inline-flex items-center gap-1.5 text-[#0298b9] font-bold text-xs hover:text-[#00829f]">
+
               <span>Read Article</span>
+
               <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+
             </a>
+
           </div>
+
         </div>
 
+
+
       </div>
+
     </div>
+
   </section>
 
+
+
   <!-- 10. 100% MINDMED FOOTER -->
+
   <footer id="footer" class="bg-[#061826] text-slate-300 pt-16 pb-8 border-t border-slate-800/80 font-sans">
+
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
+
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-16">
+
         
+
         <div class="space-y-5">
+
           <a href="index.html" class="flex items-center gap-2.5 group">
+
             <div class="w-9 h-9 rounded-xl bg-[#0298b9] text-white flex items-center justify-center font-bold shadow-md">
+
               <i data-lucide="activity" class="w-5 h-5"></i>
+
             </div>
+
             <span class="text-xl font-bold text-white tracking-tight">LifeV<span class="text-[#0298b9]">24</span>Care</span>
+
           </a>
+
           <p class="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-xs">
-            Chandigarh's round-the-clock multispecialty hospital - care that's always open, always ready.
+
+            Delhi's round-the-clock multispecialty hospital - care that's always open, always ready.
+
           </p>
+
           <div class="flex items-center gap-2.5 pt-2">
+
             <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="twitter" class="w-4 h-4"></i></a>
+
             <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="facebook" class="w-4 h-4"></i></a>
+
             <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="linkedin" class="w-4 h-4"></i></a>
+
             <a href="#" class="w-9 h-9 rounded-lg border border-slate-700/80 bg-slate-900/50 flex items-center justify-center text-slate-400 hover:text-[#0298b9] hover:border-[#0298b9] transition-all"><i data-lucide="instagram" class="w-4 h-4"></i></a>
+
           </div>
+
         </div>
 
+
+
         <div>
+
           <h4 class="text-white font-bold text-base mb-6">Useful Links</h4>
+
           <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
+
             <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About Us</a></li>
+
             <li><a href="services.html" class="hover:text-cyan-400 transition-colors">Our Services</a></li>
+
             <li><a href="gallery.html" class="hover:text-cyan-400 transition-colors">Photo Gallery</a></li>
+
             <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+
             <li><button onclick="openBookingModal()" class="hover:text-cyan-400 transition-colors text-left">Book Appointment</button></li>
+
           </ul>
+
         </div>
 
+
+
         <div>
+
           <h4 class="text-white font-bold text-base mb-6">Our Services</h4>
+
           <ul class="space-y-3 text-xs sm:text-sm text-slate-400">
+
             <li><button onclick="openBookingModal('24x7 Emergency Care')" class="hover:text-cyan-400 transition-colors text-left">24x7 Emergency Care</button></li>
+
             <li><button onclick="openBookingModal('General Medicine')" class="hover:text-cyan-400 transition-colors text-left">General Medicine</button></li>
+
             <li><button onclick="openBookingModal('General & Laparoscopic Surgery')" class="hover:text-cyan-400 transition-colors text-left">General & Laparoscopic Surgery</button></li>
+
             <li><button onclick="openBookingModal('Gynaecology & Obstetrics')" class="hover:text-cyan-400 transition-colors text-left">Gynaecology & Obstetrics</button></li>
+
             <li><button onclick="openBookingModal('Paediatrics')" class="hover:text-cyan-400 transition-colors text-left">Paediatrics</button></li>
+
             <li><button onclick="openBookingModal('Diagnostic Lab')" class="hover:text-cyan-400 transition-colors text-left">Diagnostic Lab</button></li>
+
           </ul>
+
         </div>
 
+
+
         <div>
+
           <h4 class="text-white font-bold text-base mb-6">Newsletter Signup</h4>
+
           <form onsubmit="handleSubscribe(event)" class="space-y-4">
+
             <div class="flex items-center overflow-hidden rounded-lg border border-slate-700/80 bg-[#0d2235]">
+
               <input type="email" required placeholder="Enter your Email..." id="newsletterEmail" class="w-full bg-transparent px-4 py-3 text-xs text-white placeholder-slate-400 focus:outline-none" />
+
               <button type="submit" class="bg-[#7c3aed] hover:bg-[#6d28d9] text-white px-4 py-3 font-bold flex items-center justify-center transition-colors shadow-md flex-shrink-0">
+
                 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+
               </button>
+
             </div>
+
             <label class="flex items-center gap-2 text-xs text-slate-400 cursor-pointer">
+
               <input type="checkbox" checked required class="rounded border-slate-700 bg-slate-900 text-[#7c3aed] focus:ring-0" />
+
               <span>I agree to the <a href="index.html#" class="underline text-slate-300 hover:text-cyan-400">Privacy Policy</a>.</span>
+
             </label>
+
             <p id="subscribeMsg" class="hidden text-xs text-emerald-400 font-semibold pt-1">Thank you for subscribing!</p>
+
           </form>
+
         </div>
+
+
 
       </div>
+
+
 
       <div class="pt-6 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+
         <p>© 2026 LifeV24Care Hospital All Rights Reserved by site</p>
+
         <div class="flex items-center gap-3">
+
           <a href="index.html#" class="hover:text-slate-300">Privacy Policy</a>
+
           <span>|</span>
+
           <a href="index.html#" class="hover:text-slate-300">Term of Service</a>
+
         </div>
+
       </div>
+
     </div>
+
   </footer>
 
+
+
   <!-- BOOKING MODAL -->
+
   <div id="bookingModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/75 backdrop-blur-sm animate-fadeIn">
+
     <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-100">
+
       <button onclick="closeBookingModal()" class="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-700">✕</button>
+
       
+
       <div id="modalFormContent">
+
         <span class="text-[#0298b9] text-xs font-bold uppercase tracking-wider">Book Consultation</span>
+
         <h3 class="text-2xl font-extrabold text-slate-900 mt-1">LifeV24Care Appointment</h3>
+
         <form onsubmit="submitBookingForm(event)" class="space-y-3 mt-4">
+
           <input type="text" required placeholder="Patient Full Name" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
           <input type="tel" required id="patientPhone" placeholder="Phone Number" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
           <select id="modalDeptSelect" class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]">
+
             <option value="24x7 Emergency Care">24x7 Emergency Care</option>
+
             <option value="General Medicine">General Medicine</option>
+
             <option value="General & Laparoscopic Surgery">General & Laparoscopic Surgery</option>
+
             <option value="Gynaecology & Obstetrics">Gynaecology & Obstetrics</option>
+
             <option value="Diagnostic Lab">Diagnostic Lab</option>
+
             <option value="Paediatrics">Paediatrics</option>
+
             <option value="Orthopaedics">Orthopaedics</option>
+
           </select>
+
           <input type="date" required class="w-full px-3.5 py-2.5 text-xs bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#0298b9]" />
+
           <button type="submit" class="w-full bg-[#0298b9] hover:bg-[#00829f] text-white py-3 rounded-xl font-bold text-sm shadow-md transition-colors">
+
             Confirm Appointment Request
+
           </button>
+
         </form>
+
       </div>
+
+
 
       <div id="modalSuccessContent" class="hidden py-10 text-center space-y-4">
+
         <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl font-bold">✓</div>
+
         <h3 class="text-2xl font-bold text-slate-900">Appointment Requested!</h3>
+
         <p class="text-sm text-slate-600">Our desk will call you at <span id="displayPhone" class="font-semibold"></span> shortly.</p>
+
       </div>
+
     </div>
+
   </div>
+
+
 
   <!-- VIDEO MODAL -->
+
   <div id="videoModal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-md animate-fadeIn">
+
     <div class="bg-black rounded-3xl max-w-4xl w-full overflow-hidden shadow-2xl relative">
+
       <button onclick="closeVideoModal()" class="absolute top-4 right-4 z-10 p-2.5 rounded-full bg-slate-900/80 text-white">✕</button>
+
       <div class="aspect-video w-full">
+
         <iframe title="Hospital Tour" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" class="w-full h-full border-0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
       </div>
+
     </div>
+
   </div>
 
+
+
   <script>
+
     function openBookingModal(dept) {
+
       if (dept) { document.getElementById('modalDeptSelect').value = dept; }
+
       document.getElementById('bookingModal').classList.remove('hidden');
+
     }
+
     function closeBookingModal() {
+
       document.getElementById('bookingModal').classList.add('hidden');
+
       document.getElementById('modalFormContent').classList.remove('hidden');
+
       document.getElementById('modalSuccessContent').classList.add('hidden');
+
     }
+
     function submitBookingForm(e) {
+
       e.preventDefault();
+
       const phone = document.getElementById('patientPhone').value;
+
       document.getElementById('displayPhone').innerText = phone;
+
       document.getElementById('modalFormContent').classList.add('hidden');
+
       document.getElementById('modalSuccessContent').classList.remove('hidden');
+
       setTimeout(() => { closeBookingModal(); }, 2500);
+
     }
+
     function openVideoModal() {
+
       document.getElementById('videoModal').classList.remove('hidden');
+
     }
+
     function closeVideoModal() {
+
       document.getElementById('videoModal').classList.add('hidden');
+
     }
+
     function toggleMobileMenu() {
+
       document.getElementById('mobileMenu').classList.toggle('hidden');
+
     }
+
     function handleSubscribe(e) {
+
       e.preventDefault();
+
       document.getElementById('newsletterEmail').value = '';
+
       document.getElementById('subscribeMsg').classList.remove('hidden');
+
       setTimeout(() => { document.getElementById('subscribeMsg').classList.add('hidden'); }, 4000);
+
     }
+
     document.addEventListener("DOMContentLoaded", function() {
+
       if (window.lucide) { lucide.createIcons(); }
+
     });
+
   </script>
+
 </body>
+
 </html>
+
