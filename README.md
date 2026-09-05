@@ -21,25 +21,30 @@ original content and original artwork.
 ## Quick start
 
 ```bash
-npm run install:all     # installs root, server and client dependencies
-npm run images          # generates the SVG artwork (department + article cards, logo)
-npm run photos          # downloads and crops the photographs of Indian doctors and patients
+npm install             # npm workspaces: installs root, client and server in one go
 npm run dev             # API on :5000, Vite dev server on :5173
 ```
 
-Both image steps are already done in this repo, so you can skip straight to `npm run dev`.
+The image steps are already done in this repo. To regenerate them:
+`npm run images` (SVG logo/artwork) and `npm run photos` (downloads + crops the photos).
 
 Open <http://localhost:5173>.
 
 ### Production
 
 ```bash
+npm install
 npm run build           # builds the React app into client/dist
-npm start               # Express serves the API *and* the built site on :5000
+npm start               # Express serves the API *and* the built site on $PORT (default 5000)
 ```
 
-Copy `.env.example` to `.env` in `server/` (or the repo root) to change the port, the allowed
-CORS origins or the notification email settings.
+Build before you start — Express only serves the website if `client/dist` exists.
+
+Copy `.env.example` to `.env` to change the port, the allowed CORS origins or the notification
+email settings.
+
+**Deploying to Hostinger or anywhere else: see [DEPLOY.md](DEPLOY.md).** Requires Node 18+
+(20 recommended). It is a single Node app — do not deploy the client and server separately.
 
 ---
 
