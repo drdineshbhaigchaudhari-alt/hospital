@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="medicine">
+    <defs><linearGradient id="s-stethoscope" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#1567A826"/></linearGradient></defs>
+    <rect width="800" height="560" fill="url(#s-stethoscope)"/>
+    <rect width="800" height="560" fill="#1567A8" opacity=".07"/>
+    
+  <circle cx="688" cy="100.8" r="145.6" fill="#1567A8" opacity=".16"/>
+  <circle cx="80" cy="470.4" r="112" fill="#F5A524" opacity=".14"/>
+  <circle cx="576" cy="504" r="67.2" fill="#F5A524" opacity=".12"/>
+    <circle cx="400" cy="280" r="190.4" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(400 280) scale(1.75)"><g fill="none" stroke="#1567A8" stroke-width="14" stroke-linecap="round"><path d="M-46 -60 v30 q0 40 34 40 q34 0 34 -40 v-30"/><path d="M22 10 v18 q0 30 26 30 q26 0 26 -30 v-8"/></g><circle cx="74" cy="-4" r="16" fill="#1567A8"/></g>
+    <rect x="0" y="550" width="800" height="10" fill="#1567A8" opacity=".55"/></svg>

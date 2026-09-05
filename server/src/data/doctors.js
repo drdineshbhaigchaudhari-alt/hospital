@@ -1,0 +1,192 @@
+// Consultant panel.
+//
+// Names, qualifications, OPD timings and biographies below are SAMPLE CONTENT
+// written for this website build. The photographs are free Pexels stock images
+// of Indian and South Asian doctors (see IMAGE-CREDITS.md) used as placeholders.
+// Replace both with your real consultants and their own photographs, with
+// consent, before this site goes live.
+
+export const doctors = [
+  {
+    slug: 'dr-arvind-deshmukh',
+    name: 'Dr. Arvind Deshmukh',
+    gender: 'male',
+    designation: 'Director - Cardiac Sciences & Senior Interventional Cardiologist',
+    qualification: 'MBBS, MD (Medicine), DM (Cardiology)',
+    speciality: 'cardiology',
+    experience: 22,
+    languages: ['Hindi', 'English', 'Marathi'],
+    opd: 'Mon - Sat',
+    timings: '10:00 AM - 2:00 PM',
+    photo: '/images/doctors/dr-arvind-deshmukh.jpg',
+    bio: 'Dr. Deshmukh has performed over nine thousand angiographies and more than four thousand angioplasties, a large share of them as emergency procedures in the middle of the night. He set up the primary angioplasty pathway at LifeV 24 Care and personally audits every door-to-balloon time.',
+    focus: ['Primary angioplasty', 'Complex coronary intervention', 'Heart failure clinic']
+  },
+  {
+    slug: 'dr-shalini-iyer',
+    name: 'Dr. Shalini Iyer',
+    gender: 'female',
+    designation: 'Senior Consultant - Obstetrics & Gynaecology',
+    qualification: 'MBBS, MS (Obstetrics & Gynaecology), FMAS',
+    speciality: 'obstetrics-gynaecology',
+    experience: 16,
+    languages: ['Hindi', 'English', 'Tamil'],
+    opd: 'Mon - Sat',
+    timings: '11:00 AM - 4:00 PM',
+    photo: '/images/doctors/dr-shalini-iyer.jpg',
+    bio: 'Dr. Iyer has delivered more than five thousand babies and is known for keeping caesarean rates low without taking risks with a mother or child. She runs the hospital antenatal class every Saturday, and it is open to families who deliver elsewhere too.',
+    focus: ['Painless delivery', 'High-risk pregnancy', 'Laparoscopic gynae surgery']
+  },
+  {
+    slug: 'dr-rajeev-nandan',
+    name: 'Dr. Rajeev Nandan',
+    gender: 'male',
+    designation: 'HOD - Neurology & Stroke Unit',
+    qualification: 'MBBS, MD (Medicine), DM (Neurology)',
+    speciality: 'neurosciences',
+    experience: 14,
+    languages: ['Hindi', 'English', 'Bhojpuri'],
+    opd: 'Mon, Wed, Fri',
+    timings: '9:30 AM - 1:30 PM',
+    photo: '/images/doctors/dr-rajeev-nandan.jpg',
+    bio: 'Dr. Nandan built the golden-hour stroke protocol that is now used across the hospital. His clinic also handles epilepsy, migraine and movement disorders, and he is a strong believer in explaining an MRI to the family on the screen rather than on paper.',
+    focus: ['Stroke thrombolysis', 'Epilepsy', 'Headache and migraine']
+  },
+  {
+    slug: 'dr-meenakshi-rao',
+    name: 'Dr. Meenakshi Rao',
+    gender: 'female',
+    designation: 'Consultant - Paediatrics & Neonatology',
+    qualification: 'MBBS, MD (Paediatrics), Fellowship in Neonatology',
+    speciality: 'paediatrics',
+    experience: 15,
+    languages: ['Hindi', 'English', 'Telugu'],
+    opd: 'Mon - Sat',
+    timings: '10:00 AM - 1:00 PM, 5:00 PM - 7:00 PM',
+    photo: '/images/doctors/dr-meenakshi-rao.jpg',
+    bio: 'Dr. Rao looks after the Level-III NICU and has managed babies born as early as 26 weeks. Parents remember her for sitting down at eye level with them, and for a rule she insists on: no medicine for a child without telling the parents exactly why.',
+    focus: ['Newborn intensive care', 'Childhood asthma', 'Growth and nutrition']
+  },
+  {
+    slug: 'dr-harpreet-singh-bedi',
+    name: 'Dr. Harpreet Singh Bedi',
+    gender: 'male',
+    designation: 'Director - Orthopaedics & Joint Replacement',
+    qualification: 'MBBS, MS (Orthopaedics), Fellowship in Arthroplasty',
+    speciality: 'orthopaedics',
+    experience: 26,
+    languages: ['Hindi', 'English', 'Punjabi'],
+    opd: 'Tue, Thu, Sat',
+    timings: '11:00 AM - 3:00 PM',
+    photo: '/images/doctors/dr-harpreet-singh-bedi.jpg',
+    bio: 'With over three thousand joint replacements behind him, Dr. Bedi is candid with patients about who actually needs surgery and who can manage with physiotherapy and weight control for a few more years. He also handles complex highway trauma cases.',
+    focus: ['Knee and hip replacement', 'Arthroscopy', 'Complex trauma']
+  },
+  {
+    slug: 'dr-anjali-verma',
+    name: 'Dr. Anjali Verma',
+    gender: 'female',
+    designation: 'Consultant - Dermatology & Cosmetology',
+    qualification: 'MBBS, MD (Dermatology, Venereology & Leprosy)',
+    speciality: 'dermatology',
+    experience: 9,
+    languages: ['Hindi', 'English'],
+    opd: 'Mon, Tue, Thu, Fri',
+    timings: '12:00 PM - 4:00 PM',
+    photo: '/images/doctors/dr-anjali-verma.jpg',
+    bio: 'Dr. Verma treats acne, pigmentation and hair fall with a plan that states the number of sessions and the cost up front. She is openly against unnecessary cosmetic packages and turns away more procedures than she recommends.',
+    focus: ['Acne and scars', 'Hair fall and PRP', 'Pigmentation']
+  },
+  {
+    slug: 'dr-jaswinder-singh-chadha',
+    name: 'Dr. Jaswinder Singh Chadha',
+    gender: 'male',
+    designation: 'HOD - General & Laparoscopic Surgery',
+    qualification: 'MBBS, MS (General Surgery), FIAGES',
+    speciality: 'general-surgery',
+    experience: 18,
+    languages: ['Hindi', 'English', 'Punjabi'],
+    opd: 'Mon - Fri',
+    timings: '10:30 AM - 2:00 PM',
+    photo: '/images/doctors/dr-jaswinder-singh-chadha.jpg',
+    bio: 'Dr. Chadha performs the majority of his gall bladder, hernia and appendix surgeries laparoscopically, with most patients discharged within 24 hours. He leads the hospital surgical audit and the infection-control review.',
+    focus: ['Laparoscopic surgery', 'Hernia repair', 'Piles and fistula']
+  },
+  {
+    slug: 'dr-farhan-ahmed',
+    name: 'Dr. Farhan Ahmed',
+    gender: 'male',
+    designation: 'Consultant - Pulmonology & Critical Care',
+    qualification: 'MBBS, MD (Respiratory Medicine), IDCCM',
+    speciality: 'pulmonology',
+    experience: 10,
+    languages: ['Hindi', 'English', 'Urdu'],
+    opd: 'Mon - Sat',
+    timings: '9:00 AM - 12:30 PM',
+    photo: '/images/doctors/dr-farhan-ahmed.jpg',
+    bio: 'Dr. Ahmed splits his week between the chest clinic and the ICU. He runs an inhaler-technique class for asthma patients, because in his experience most treatment failure is not the medicine, it is the way the device is being used.',
+    focus: ['Asthma and COPD', 'ICU and ventilation', 'Sleep apnoea']
+  },
+  {
+    slug: 'dr-priya-nambiar',
+    name: 'Dr. Priya Nambiar',
+    gender: 'female',
+    designation: 'Senior Consultant - Nephrology & Dialysis',
+    qualification: 'MBBS, MD (Medicine), DM (Nephrology)',
+    speciality: 'nephrology',
+    experience: 21,
+    languages: ['Hindi', 'English', 'Malayalam'],
+    opd: 'Tue, Thu, Sat',
+    timings: '10:00 AM - 2:00 PM',
+    photo: '/images/doctors/dr-priya-nambiar.jpg',
+    bio: 'Dr. Nambiar oversees the dialysis floor and the transplant workup programme. Much of her clinic time goes into slowing down early kidney disease in diabetic patients, which she calls the most under-treated problem she sees.',
+    focus: ['Dialysis', 'Diabetic kidney disease', 'Transplant workup']
+  },
+  {
+    slug: 'dr-vikram-chaudhary',
+    name: 'Dr. Vikram Chaudhary',
+    gender: 'male',
+    designation: 'Senior Consultant - Urology & Andrology',
+    qualification: 'MBBS, MS (Surgery), MCh (Urology)',
+    speciality: 'urology',
+    experience: 15,
+    languages: ['Hindi', 'English', 'Haryanvi'],
+    opd: 'Mon, Wed, Fri',
+    timings: '11:00 AM - 3:00 PM',
+    photo: '/images/doctors/dr-vikram-chaudhary.jpg',
+    bio: 'Dr. Chaudhary handles the hospital laser stone programme and prostate surgery. He also runs a discreet andrology clinic on Friday evenings, with a separate entrance and no names called out in the waiting area.',
+    focus: ['Laser stone surgery', 'Prostate (TURP)', 'Male infertility']
+  },
+  {
+    slug: 'dr-mohan-krishnan',
+    name: 'Dr. Mohan Krishnan',
+    gender: 'male',
+    designation: 'Consultant - ENT & Head-Neck Surgery',
+    qualification: 'MBBS, MS (ENT), DNB',
+    speciality: 'ent',
+    experience: 11,
+    languages: ['Hindi', 'English', 'Tamil', 'Kannada'],
+    opd: 'Mon, Wed, Sat',
+    timings: '12:00 PM - 4:00 PM',
+    photo: '/images/doctors/dr-mohan-krishnan.jpg',
+    bio: 'Dr. Krishnan performs endoscopic sinus and micro-ear surgery, and handles a steady stream of vertigo referrals. He does a nasal endoscopy in the OPD itself, so patients usually leave the first visit already knowing the diagnosis.',
+    focus: ['Sinus surgery', 'Ear surgery', 'Vertigo and hearing loss']
+  },
+  {
+    slug: 'dr-ritu-malhotra',
+    name: 'Dr. Ritu Malhotra',
+    gender: 'female',
+    designation: 'Consultant - Internal Medicine & Diabetology',
+    qualification: 'MBBS, MD (General Medicine), CCEBDM',
+    speciality: 'internal-medicine',
+    experience: 9,
+    languages: ['Hindi', 'English', 'Punjabi'],
+    opd: 'Mon - Sat',
+    timings: '9:00 AM - 1:00 PM',
+    photo: '/images/doctors/dr-ritu-malhotra.jpg',
+    bio: 'Dr. Malhotra runs the diabetes clinic and the preventive health check programme. She is usually the first doctor a family meets here, and she is careful to send patients to a specialist only when the case genuinely calls for one.',
+    focus: ['Diabetes', 'Thyroid and blood pressure', 'Preventive check-ups']
+  }
+];
+
+export const getDoctor = (slug) => doctors.find((d) => d.slug === slug);

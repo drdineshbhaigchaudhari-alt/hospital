@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" role="img" aria-label="stroke">
+    <defs><linearGradient id="s-brain" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#7B439726"/></linearGradient></defs>
+    <rect width="880" height="500" fill="url(#s-brain)"/>
+    <rect width="880" height="500" fill="#7B4397" opacity=".07"/>
+    
+  <circle cx="756.8" cy="90" r="130" fill="#7B4397" opacity=".16"/>
+  <circle cx="88" cy="420" r="100" fill="#F5A524" opacity=".14"/>
+  <circle cx="633.6" cy="450" r="60" fill="#F5A524" opacity=".12"/>
+    <circle cx="440" cy="250" r="170" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(440 250) scale(1.5625)"><path d="M-8 -62 c-30 -8 -54 12 -50 38 c-20 10 -20 40 2 50 c-2 26 24 42 48 32 Z" fill="#7B4397"/><path d="M8 -62 c30 -8 54 12 50 38 c20 10 20 40 -2 50 c2 26 -24 42 -48 32 Z" fill="#7B4397" opacity=".72"/></g>
+    <rect x="0" y="490" width="880" height="10" fill="#7B4397" opacity=".55"/></svg>

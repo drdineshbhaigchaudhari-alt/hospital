@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="physiogym">
+    <defs><linearGradient id="s-dumbbell" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#F5A52426"/></linearGradient></defs>
+    <rect width="800" height="560" fill="url(#s-dumbbell)"/>
+    <rect width="800" height="560" fill="#F5A524" opacity=".07"/>
+    
+  <circle cx="688" cy="100.8" r="145.6" fill="#F5A524" opacity=".16"/>
+  <circle cx="80" cy="470.4" r="112" fill="#F5A524" opacity=".14"/>
+  <circle cx="576" cy="504" r="67.2" fill="#F5A524" opacity=".12"/>
+    <circle cx="400" cy="280" r="190.4" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(400 280) scale(1.75)"><g fill="#F5A524"><rect x="-70" y="-12" width="140" height="24" rx="12"/><rect x="-86" y="-32" width="24" height="64" rx="10"/><rect x="62" y="-32" width="24" height="64" rx="10"/></g></g>
+    <rect x="0" y="550" width="800" height="10" fill="#F5A524" opacity=".55"/></svg>

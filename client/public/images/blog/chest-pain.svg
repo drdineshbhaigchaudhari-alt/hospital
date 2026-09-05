@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" role="img" aria-label="chest-pain">
+    <defs><linearGradient id="s-heart" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EF5B5B26"/></linearGradient></defs>
+    <rect width="880" height="500" fill="url(#s-heart)"/>
+    <rect width="880" height="500" fill="#EF5B5B" opacity=".07"/>
+    
+  <circle cx="756.8" cy="90" r="130" fill="#EF5B5B" opacity=".16"/>
+  <circle cx="88" cy="420" r="100" fill="#F5A524" opacity=".14"/>
+  <circle cx="633.6" cy="450" r="60" fill="#F5A524" opacity=".12"/>
+    <circle cx="440" cy="250" r="170" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(440 250) scale(1.5625)"><path d="M0 62 C-70 12 -78 -34 -46 -54 C-24 -68 -6 -56 0 -40 C6 -56 24 -68 46 -54 C78 -34 70 12 0 62 Z" fill="#EF5B5B"/></g>
+    <rect x="0" y="490" width="880" height="10" fill="#EF5B5B" opacity=".55"/></svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="800" height="560" role="img" aria-label="cathlab">
+    <defs><linearGradient id="s-heart" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EF5B5B26"/></linearGradient></defs>
+    <rect width="800" height="560" fill="url(#s-heart)"/>
+    <rect width="800" height="560" fill="#EF5B5B" opacity=".07"/>
+    
+  <circle cx="688" cy="100.8" r="145.6" fill="#EF5B5B" opacity=".16"/>
+  <circle cx="80" cy="470.4" r="112" fill="#F5A524" opacity=".14"/>
+  <circle cx="576" cy="504" r="67.2" fill="#F5A524" opacity=".12"/>
+    <circle cx="400" cy="280" r="190.4" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(400 280) scale(1.75)"><path d="M0 62 C-70 12 -78 -34 -46 -54 C-24 -68 -6 -56 0 -40 C6 -56 24 -68 46 -54 C78 -34 70 12 0 62 Z" fill="#EF5B5B"/></g>
+    <rect x="0" y="550" width="800" height="10" fill="#EF5B5B" opacity=".55"/></svg>

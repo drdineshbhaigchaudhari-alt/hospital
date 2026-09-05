@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 500" width="880" height="500" role="img" aria-label="fever">
+    <defs><linearGradient id="s-virus" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#0FA3A026"/></linearGradient></defs>
+    <rect width="880" height="500" fill="url(#s-virus)"/>
+    <rect width="880" height="500" fill="#0FA3A0" opacity=".07"/>
+    
+  <circle cx="756.8" cy="90" r="130" fill="#0FA3A0" opacity=".16"/>
+  <circle cx="88" cy="420" r="100" fill="#F5A524" opacity=".14"/>
+  <circle cx="633.6" cy="450" r="60" fill="#F5A524" opacity=".12"/>
+    <circle cx="440" cy="250" r="170" fill="#FFFFFF" opacity=".72"/>
+    <g transform="translate(440 250) scale(1.5625)"><g fill="#0FA3A0"><circle cx="0" cy="0" r="40"/><g stroke="#0FA3A0" stroke-width="12" stroke-linecap="round"><path d="M0 -40 v-24 M0 40 v24 M-40 0 h-24 M40 0 h24 M-28 -28 l-18 -18 M28 28 l18 18 M28 -28 l18 -18 M-28 28 l-18 18"/></g><circle cx="0" cy="-66" r="9"/><circle cx="0" cy="66" r="9"/><circle cx="-66" cy="0" r="9"/><circle cx="66" cy="0" r="9"/></g></g>
+    <rect x="0" y="490" width="880" height="10" fill="#0FA3A0" opacity=".55"/></svg>
