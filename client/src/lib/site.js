@@ -6,13 +6,13 @@
 
 export const CONTACT = {
   name: 'LifeV 24 Care Hospital',
-  emergency: '+91 79186 16790',
-  emergencyTel: '+917918616790',
-  ambulance: '+91 79186 16791',
-  ambulanceTel: '+917918616791',
-  reception: '+91 79186 16792',
-  receptionTel: '+917918616792',
-  whatsapp: '917918616790',
+  emergency: '+91 83606 59127',
+  emergencyTel: '+918360659127',
+  ambulance: '+91 83606 59127',
+  ambulanceTel: '+918360659127',
+  reception: '+91 62844 33778',
+  receptionTel: '+916284433778',
+  whatsapp: '918360659127',
   email: 'care@lifev24carehospital.com',
   addressLines: ['Plot No. 24, Health City Road', 'Near Ring Road Crossing, Sector 12', 'New Delhi - 110085'],
   // Replace both with your real address before launch.

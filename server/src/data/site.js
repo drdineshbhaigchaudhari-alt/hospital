@@ -5,9 +5,9 @@ export const hospital = {
   tagline: 'Care that never closes.',
   established: 2011,
   website: 'https://lifev24carehospital.com',
-  emergency: '+91 79186 16790',
-  ambulance: '+91 79186 16791',
-  reception: '+91 79186 16792',
+  emergency: '+91 83606 59127',
+  ambulance: '+91 83606 59127',
+  reception: '+91 62844 33778',
   email: 'care@lifev24carehospital.com',
   appointmentsEmail: 'appointments@lifev24carehospital.com',
   address: {
@@ -30,7 +30,7 @@ export const hospital = {
     instagram: 'https://instagram.com/',
     youtube: 'https://youtube.com/',
     linkedin: 'https://linkedin.com/',
-    whatsapp: 'https://wa.me/917918616790'
+    whatsapp: 'https://wa.me/918360659127'
   }
 };
 
