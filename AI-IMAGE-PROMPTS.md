@@ -62,7 +62,7 @@ softly blurred clinical background**, white coat over Indian attire, stethoscope
 | `dr-priya-nambiar.jpg` | Indian female nephrologist, early 50s, hair in a neat bun, glasses, small bindi, white coat over a green cotton saree, dialysis unit blurred behind |
 | `dr-vikram-chaudhary.jpg` | Indian male urologist, 40s, thick moustache, white coat over a navy shirt, stethoscope, bright consultation room |
 | `dr-mohan-krishnan.jpg` | South Indian male ENT surgeon, early 30s, glasses, clean shaven, white coat over a sky blue shirt, ENT head mirror around the neck |
-| `dr-ritu-malhotra.jpg` | Indian female physician and diabetologist, early 30s, long hair, bindi, white coat over a coral salwar kameez, glucometer on the desk |
+| `dr-komalben-thakor.jpg` | Indian female physician, late 20s, long hair, bindi, white coat over a coral salwar kameez, stethoscope, bright consultation room |
 
 ## 2. Hero banners — `client/public/images/hero/` (2000×1125, subject on the RIGHT, left third clear for headline text)
 

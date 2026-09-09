@@ -278,8 +278,7 @@ const doctorLooks = [
   ['dr-farhan-ahmed', { skin: 2, hair: 'short', beard: 'beard', inner: 4 }],
   ['dr-priya-nambiar', { skin: 4, hair: 'bun', female: true, saree: 4, glasses: true, grey: true }],
   ['dr-vikram-chaudhary', { skin: 1, hair: 'short', beard: 'moustache', inner: 5 }],
-  ['dr-mohan-krishnan', { skin: 5, hair: 'short', beard: 'none', inner: 1, glasses: true }],
-  ['dr-ritu-malhotra', { skin: 1, hair: 'long', female: true, saree: 0 }]
+  ['dr-mohan-krishnan', { skin: 5, hair: 'short', beard: 'none', inner: 1, glasses: true }]
 ];
 
 function buildDoctors() {

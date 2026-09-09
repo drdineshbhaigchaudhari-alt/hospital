@@ -62,7 +62,7 @@ export default function Home() {
                 <Icon name="award" size={22} />
               </span>
               <div>
-                <strong>14 years</strong>
+                <strong>20 years</strong>
                 <small>of continuous service to north Delhi</small>
               </div>
             </div>

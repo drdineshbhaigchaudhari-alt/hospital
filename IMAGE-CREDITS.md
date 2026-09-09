@@ -36,7 +36,6 @@ original, open `https://www.pexels.com/photo/<id>/`.
 | dr-priya-nambiar.jpg | 5738735 |
 | dr-vikram-chaudhary.jpg | 27298085 |
 | dr-mohan-krishnan.jpg | 10691259 |
-| dr-ritu-malhotra.jpg | 32254667 |
 
 ### Patients / testimonials — `client/public/images/misc/`
 

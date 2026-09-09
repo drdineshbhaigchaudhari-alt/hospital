@@ -44,7 +44,7 @@ const ASSETS = [
   [5738735, 'doctors/dr-priya-nambiar.jpg', 1000, 1200, 'north', [0.24, 0.06, 0.42, 0.82]],
   [27298085, 'doctors/dr-vikram-chaudhary.jpg', 1000, 1200, 'north'],
   [10691259, 'doctors/dr-mohan-krishnan.jpg', 1000, 1200, 'north', [0.1, 0, 0.8, 0.72]],
-  [32254667, 'doctors/dr-ritu-malhotra.jpg', 1000, 1200, 'north'],
+  // dr-komalben-thakor.jpg is a supplied portrait, not a stock photo - do not fetch.
 
   // ---- testimonial avatars (square, head crop) --------------------
   [4583954, 'misc/patient-1.jpg', 600, 600, 'north'],

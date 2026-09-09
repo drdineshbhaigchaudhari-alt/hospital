@@ -35,7 +35,7 @@ export const hospital = {
 };
 
 export const stats = [
-  { value: 14, suffix: '+', label: 'Years of service' },
+  { value: 20, suffix: '+', label: 'Years of service' },
   { value: 250, suffix: '+', label: 'Inpatient beds' },
   { value: 60, suffix: '+', label: 'Expert consultants' },
   { value: 16, suffix: '', label: 'Specialities under one roof' },

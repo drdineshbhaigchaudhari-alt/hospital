@@ -45,7 +45,7 @@ export const blogs = [
     excerpt:
       'You do not have to abandon roti, rice and festivals. You do have to change the order, the proportion and the timing on your plate.',
     category: 'Diabetes',
-    author: 'Dr. Ritu Malhotra',
+    author: 'Dr. Komalben Rameshji Thakor',
     date: '2026-06-12',
     readMinutes: 7,
     image: '/images/blog/diabetes.jpg',

@@ -8,19 +8,19 @@
 
 export const doctors = [
   {
-    slug: 'dr-ritu-malhotra',
-    name: 'Dr. Ritu Malhotra',
+    slug: 'dr-komalben-thakor',
+    name: 'Dr. Komalben Rameshji Thakor',
     gender: 'female',
-    designation: 'Consultant - Internal Medicine & Diabetology',
-    qualification: 'MBBS, MD (General Medicine), CCEBDM',
+    designation: 'Consultant - Medicine Officer',
+    qualification: 'MBBS, (General Medicine)',
     speciality: 'internal-medicine',
-    experience: 6,
-    languages: ['Hindi', 'English', 'Punjabi'],
+    experience: 2,
+    languages: ['Hindi', 'English', 'Gujarati'],
     opd: 'Mon - Sat',
     timings: '9:00 AM - 1:00 PM',
-    photo: '/images/doctors/dr-ritu-malhotra.jpg',
-    bio: 'Dr. Malhotra runs the diabetes clinic and the preventive health check programme. She is usually the first doctor a family meets here, and she is careful to send patients to a specialist only when the case genuinely calls for one.',
-    focus: ['Diabetes', 'Thyroid and blood pressure', 'Preventive check-ups']
+    photo: '/images/doctors/dr-komalben-thakor.jpg',
+    bio: 'Dr. Thakor sees patients in the general medicine OPD and the preventive health check programme. She is usually the first doctor a family meets here, and she is careful to send patients to a specialist only when the case genuinely calls for one.',
+    focus: ['Fever and infections', 'Diabetes, thyroid and blood pressure', 'Preventive check-ups']
   },
   {
     slug: 'dr-arvind-deshmukh',
