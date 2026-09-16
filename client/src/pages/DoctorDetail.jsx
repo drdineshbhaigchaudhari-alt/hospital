@@ -48,6 +48,12 @@ export default function DoctorDetail() {
                     </span>
                   </li>
                   <li>
+                    <Icon name="stethoscope" size={18} />
+                    <span>
+                      <strong>Department:</strong> {data.department ?? data.specialityName}
+                    </span>
+                  </li>
+                  <li>
                     <Icon name="calendar" size={18} />
                     <span>
                       <strong>OPD days:</strong> {data.opd}

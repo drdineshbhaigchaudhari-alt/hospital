@@ -816,6 +816,19 @@
   margin-bottom: 14px;
 }
 
+.doc-card__dept {
+  font-family: var(--font-head);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: -8px 0 14px;
+}
+
+.doc-card__dept span {
+  font-weight: 700;
+  color: var(--navy);
+}
+
 .doc-card__meta {
   display: flex;
   flex-direction: column;

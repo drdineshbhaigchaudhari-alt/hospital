@@ -42,6 +42,11 @@ export function DoctorCard({ doctor }) {
         </h3>
         <span className="doc-card__role">{doctor.designation}</span>
         <p className="doc-card__qual">{doctor.qualification}</p>
+        {doctor.department && (
+          <p className="doc-card__dept">
+            Department : <span>{doctor.department}</span>
+          </p>
+        )}
 
         <div className="doc-card__meta">
           <span>
