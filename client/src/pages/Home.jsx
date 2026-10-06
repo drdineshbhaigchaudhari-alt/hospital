@@ -56,7 +56,7 @@ export default function Home() {
       <section className="section">
         <div className="shell split">
           <div className="split__media reveal">
-            <img src="/images/misc/about-hospital.jpg" alt="LifeV 24 Care Hospital campus" width="900" height="680" />
+            <img src="/images/misc/lifev-hospital-building.jpg" alt="LifeV 24 Care Hospital campus" width="900" height="680" />
             <div className="split__badge">
               <span className="quick__icon quick__icon--teal">
                 <Icon name="award" size={22} />

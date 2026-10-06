@@ -106,7 +106,7 @@ const ASSETS = [
   [27975008, 'blog/newborn.jpg', 1200, 675, 'centre'],
 
   // ---- other ------------------------------------------------------
-  // misc/about-hospital.jpg is the hospital's own branded building photo, not a Pexels download.
+  // misc/lifev-hospital-building.jpg is the hospital's own branded building photo, not a Pexels download.
   [14558560, 'misc/opd-scene.jpg', 1200, 800, 'centre']
 ];
 
