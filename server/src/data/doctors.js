@@ -8,6 +8,23 @@
 
 export const doctors = [
   {
+    slug: 'dr-pravin',
+    name: 'Dr. Pravin',
+    gender: 'male',
+    designation: 'Senior Consultant Psychiatrist',
+    qualification: 'MD (Psychiatry)',
+    speciality: 'psychiatry',
+    department: 'Psychiatry',
+    email: 'dr.pravinbhai@lifev24carehospital.com',
+    experience: 15,
+    languages: ['Gujarati', 'Hindi', 'English'],
+    opd: 'Mon - Sat',
+    timings: '10:00 AM - 2:00 PM',
+    photo: '/images/doctors/dr-pravin.jpg',
+    bio: 'Dr. Pravin leads the Department of Psychiatry. He sees adults and adolescents for anxiety, depression, sleep problems and addiction, and believes a first consultation should feel like a conversation rather than an interrogation. Families are welcome in the room whenever the patient wants them there.',
+    focus: ['Depression and anxiety disorders', 'De-addiction and alcohol dependence', 'Sleep and stress-related problems']
+  },
+  {
     slug: 'dr-komalben-thakor',
     name: 'Dr. Komalben Rameshji Thakor',
     gender: 'female',

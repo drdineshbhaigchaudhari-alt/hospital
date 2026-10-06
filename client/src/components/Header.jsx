@@ -59,7 +59,7 @@ export default function Header({ specialities = [] }) {
             <li>
               <span className="topbar__item">
                 <Icon name="pin" size={15} />
-                Sector 12, New Delhi
+                Anand Mahal Road, Surat
               </span>
             </li>
             <li>
@@ -105,7 +105,7 @@ export default function Header({ specialities = [] }) {
                     </div>
                     <div className="mega__foot">
                       <span className="muted" style={{ fontSize: '.86rem' }}>
-                        16 specialities, one campus, one team.
+                        17 specialities, one campus, one team.
                       </span>
                       <Link to="/specialities" className="link-arrow">
                         View all departments <Icon name="arrowRight" size={16} />

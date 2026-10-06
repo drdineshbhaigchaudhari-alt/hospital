@@ -14,10 +14,10 @@ export const CONTACT = {
   receptionTel: '+916284433778',
   whatsapp: '918360659127',
   email: 'care@lifev24carehospital.com',
-  addressLines: ['Plot No. 24, Health City Road', 'Near Ring Road Crossing, Sector 12', 'New Delhi - 110085'],
+  addressLines: ['Plot No. 178, Near Government Girls School', 'Anand Mahal Road', 'Surat - 395009, Gujarat'],
   // Replace both with your real address before launch.
-  mapQuery: 'Sector 12, Rohini, New Delhi, 110085',
-  mapUrl: 'https://maps.google.com/?q=Sector+12+Rohini+New+Delhi+110085',
+  mapQuery: 'Plot No. 178, Anand Mahal Road, Surat, Gujarat 395009',
+  mapUrl: 'https://maps.google.com/?q=Plot+No+178+Anand+Mahal+Road+Surat+Gujarat+395009',
   hours: [
     ['Emergency & Trauma', 'Open 24 hours, 365 days'],
     ['OPD (Mon - Sat)', '9:00 AM - 8:00 PM'],

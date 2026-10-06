@@ -11,11 +11,11 @@ export const hospital = {
   email: 'care@lifev24carehospital.com',
   appointmentsEmail: 'appointments@lifev24carehospital.com',
   address: {
-    line1: 'LifeV 24 Care Hospital, Plot No. 24, Health City Road',
-    line2: 'Near Ring Road Crossing, Sector 12',
-    city: 'New Delhi',
-    state: 'Delhi',
-    pincode: '110085',
+    line1: 'LifeV 24 Care Hospital, Plot No. 178',
+    line2: 'Near Government Girls School, Anand Mahal Road',
+    city: 'Surat',
+    state: 'Gujarat',
+    pincode: '395009',
     country: 'India'
   },
   map: 'https://maps.google.com/?q=28.7041,77.1025',
@@ -38,7 +38,7 @@ export const stats = [
   { value: 20, suffix: '+', label: 'Years of service' },
   { value: 250, suffix: '+', label: 'Inpatient beds' },
   { value: 60, suffix: '+', label: 'Expert consultants' },
-  { value: 16, suffix: '', label: 'Specialities under one roof' },
+  { value: 17, suffix: '', label: 'Specialities under one roof' },
   { value: 45000, suffix: '+', label: 'Patients treated every year' },
   { value: 24, suffix: 'x7', label: 'Emergency and trauma care' }
 ];
@@ -178,7 +178,7 @@ export const whyChooseUs = [
 export const testimonials = [
   {
     name: 'Ramesh Gupta',
-    city: 'Rohini, Delhi',
+    city: 'Adajan, Surat',
     treatment: 'Angioplasty',
     photo: '/images/misc/patient-1.jpg',
     rating: 5,
@@ -186,7 +186,7 @@ export const testimonials = [
   },
   {
     name: 'Sunita Yadav',
-    city: 'Sector 12, New Delhi',
+    city: 'Anand Mahal Road, Surat',
     treatment: 'Painless delivery',
     photo: '/images/misc/patient-2.jpg',
     rating: 5,
@@ -194,7 +194,7 @@ export const testimonials = [
   },
   {
     name: 'Mohd. Aslam',
-    city: 'Bawana, Delhi',
+    city: 'Rander, Surat',
     treatment: 'Knee replacement',
     photo: '/images/misc/patient-3.jpg',
     rating: 5,
@@ -202,7 +202,7 @@ export const testimonials = [
   },
   {
     name: 'Lakshmi Narayanan',
-    city: 'Pitampura, Delhi',
+    city: 'Pal, Surat',
     treatment: 'NICU care for newborn',
     photo: '/images/misc/patient-4.jpg',
     rating: 5,
@@ -210,7 +210,7 @@ export const testimonials = [
   },
   {
     name: 'Jaspreet Kaur',
-    city: 'Ashok Vihar, Delhi',
+    city: 'Athwalines, Surat',
     treatment: 'Gall bladder surgery',
     photo: '/images/misc/patient-5.jpg',
     rating: 4,
@@ -218,7 +218,7 @@ export const testimonials = [
   },
   {
     name: 'Gurdial Singh',
-    city: 'Narela, Delhi',
+    city: 'Vesu, Surat',
     treatment: 'Stroke treatment',
     photo: '/images/misc/patient-6.jpg',
     rating: 5,

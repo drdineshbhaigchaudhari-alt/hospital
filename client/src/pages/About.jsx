@@ -33,7 +33,7 @@ const MILESTONES = [
   },
   {
     year: '2026',
-    title: '250 beds, 16 specialities',
+    title: '250 beds, 17 specialities',
     text: 'The campus now runs 250 beds, five modular theatres, a 12-station dialysis floor and an ambulance fleet averaging a twelve-minute city response.'
   }
 ];
@@ -59,8 +59,8 @@ const VALUES = [
 export default function About() {
   const { data } = useSite();
   useSeo(
-    'About LifeV 24 Care Hospital | 250-bed multi-speciality hospital in New Delhi',
-    'Since 2011, LifeV 24 Care Hospital has run a 24x7 emergency floor, 250 beds and 16 specialities in north Delhi. Read our story, values and milestones.'
+    'About LifeV 24 Care Hospital | 250-bed multi-speciality hospital in Surat',
+    'Since 2011, LifeV 24 Care Hospital has run a 24x7 emergency floor, 250 beds and 17 specialities in Surat. Read our story, values and milestones.'
   );
   useReveal();
 
@@ -68,7 +68,7 @@ export default function About() {
     <>
       <PageHead
         title="About LifeV 24 Care Hospital"
-        text="A 250-bed multi-speciality hospital in north Delhi, open every hour of every day since 2011."
+        text="A 250-bed multi-speciality hospital in Surat, open every hour of every day since 2011."
         crumbs={[{ label: 'About Us' }]}
       />
 
@@ -94,7 +94,7 @@ export default function About() {
               be staffed all twenty-four hours. Fifteen years later, that has never lapsed for a single night.
             </p>
             <p>
-              The hospital has grown into 250 beds and sixteen specialities, but the way we judge ourselves has
+              The hospital has grown into 250 beds and seventeen specialities, but the way we judge ourselves has
               not changed. It is not the equipment list. It is whether a family arriving at 2 AM, frightened
               and without an appointment, is seen quickly, told the truth, and given a number they can afford
               to hear.

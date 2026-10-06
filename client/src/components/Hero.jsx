@@ -18,7 +18,7 @@ const SLIDES = [
   },
   {
     image: '/images/hero/hero-2.jpg',
-    badge: '16 specialities under one roof',
+    badge: '17 specialities under one roof',
     title: (
       <>
         One campus, <em>one agreed plan</em> for your treatment

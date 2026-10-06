@@ -7,7 +7,7 @@ export default function Specialities() {
   const { data, loading, error } = useApi(() => api.specialities(), []);
   useSeo(
     'Centres of Excellence | Departments at LifeV 24 Care Hospital',
-    'Cardiology, neurosciences, orthopaedics, oncology, nephrology, gynaecology, paediatrics and more - 16 specialities under one roof at LifeV 24 Care Hospital.'
+    'Cardiology, neurosciences, orthopaedics, oncology, nephrology, gynaecology, paediatrics and more - 17 specialities under one roof at LifeV 24 Care Hospital.'
   );
   useReveal();
 
@@ -15,7 +15,7 @@ export default function Specialities() {
     <>
       <PageHead
         title="Centres of Excellence"
-        text="Sixteen departments sharing one campus, one set of theatres and one intensive care floor, so a complicated case never has to move buildings."
+        text="Seventeen departments sharing one campus, one set of theatres and one intensive care floor, so a complicated case never has to move buildings."
         crumbs={[{ label: 'Centres of Excellence' }]}
       />
 

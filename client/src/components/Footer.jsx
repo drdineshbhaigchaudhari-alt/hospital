@@ -41,7 +41,7 @@ export default function Footer({ specialities = [] }) {
               <img src="/images/misc/logo.svg" alt="LifeV 24 Care Hospital" height="46" />
             </div>
             <p>
-              A 250-bed multi-speciality hospital serving north Delhi since 2011. Emergency, diagnostics,
+              A 250-bed multi-speciality hospital serving Surat since 2011. Emergency, diagnostics,
               pharmacy and ambulance run 24 hours a day, because most emergencies do not arrive during OPD
               hours.
             </p>
@@ -90,7 +90,7 @@ export default function Footer({ specialities = [] }) {
               <li>
                 <Link to="/specialities">
                   <Icon name="chevronRight" size={14} />
-                  View all 16 departments
+                  View all 17 departments
                 </Link>
               </li>
             </ul>

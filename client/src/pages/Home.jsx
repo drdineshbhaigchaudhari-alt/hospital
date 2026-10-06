@@ -24,8 +24,8 @@ export default function Home() {
   const [tsmRef, scrollTsm] = useRail();
 
   useSeo(
-    'LifeV 24 Care Hospital | Multi-Speciality Hospital with 24x7 Emergency, New Delhi',
-    'Multi-speciality hospital with 24x7 emergency and trauma care, 16 specialities, 250+ beds, ICU, NICU, cath lab and dialysis. Book an appointment online.'
+    'LifeV 24 Care Hospital | Multi-Speciality Hospital with 24x7 Emergency, Surat',
+    'Multi-speciality hospital with 24x7 emergency and trauma care, 17 specialities, 250+ beds, ICU, NICU, cath lab and dialysis. Book an appointment online.'
   );
   useReveal();
 
@@ -63,7 +63,7 @@ export default function Home() {
               </span>
               <div>
                 <strong>20 years</strong>
-                <small>of continuous service to north Delhi</small>
+                <small>of continuous service to Surat</small>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
             <SectionHead
               eyebrow="About LifeV 24 Care"
               title="A hospital built around the hours when help is hardest to find"
-              text="We opened in 2011 with a single conviction: a serious illness rarely respects clinic timings. Today we run 250 beds, 16 specialities and an emergency floor that has never once closed."
+              text="We opened in 2011 with a single conviction: a serious illness rarely respects clinic timings. Today we run 250 beds, 17 specialities and an emergency floor that has never once closed."
             />
             <ul className="ticks">
               <li>
@@ -118,7 +118,7 @@ export default function Home() {
           <SectionHead
             align="center"
             eyebrow="Centres of Excellence"
-            title="Sixteen specialities, one campus"
+            title="Seventeen specialities, one campus"
             text="Whatever brings you here, the diagnostics, the theatre and the intensive care unit are all in the same building. Nobody is sent across the city mid-treatment."
           />
           <div className="grid g-4">
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="center" style={{ marginTop: 40 }}>
             <Link to="/specialities" className="btn btn--ghost">
-              View all 16 departments <Icon name="arrowRight" size={17} />
+              View all 17 departments <Icon name="arrowRight" size={17} />
             </Link>
           </div>
         </div>

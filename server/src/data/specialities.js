@@ -369,6 +369,29 @@ export const specialities = [
       'Sports and ligament injuries',
       'Frozen shoulder'
     ]
+  },
+  {
+    slug: 'psychiatry',
+    name: 'Psychiatry & Mental Health',
+    short: 'Confidential care for the mind, without judgement.',
+    icon: 'brain',
+    image: '/images/misc/opd-scene.jpg',
+    intro:
+      'Mental health is health. Our psychiatry OPD offers private, unhurried consultations for adults and adolescents, with medication and counselling planned together and families involved only as much as the patient wishes.',
+    highlights: [
+      'Private consultation rooms and confidential records',
+      'Medication management with regular follow-up',
+      'De-addiction programme for alcohol and tobacco',
+      'Counselling for stress, grief and relationship problems',
+      'Liaison psychiatry for patients admitted in other departments'
+    ],
+    conditions: [
+      'Depression and anxiety',
+      'Insomnia and sleep problems',
+      'Alcohol and substance dependence',
+      'Bipolar disorder and schizophrenia',
+      'Obsessive-compulsive disorder'
+    ]
   }
 ];
 

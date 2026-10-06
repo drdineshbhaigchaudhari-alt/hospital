@@ -71,6 +71,14 @@ export default function DoctorDetail() {
                       <strong>Speaks:</strong> {data.languages.join(', ')}
                     </span>
                   </li>
+                  {data.email && (
+                    <li>
+                      <Icon name="mail" size={18} />
+                      <span>
+                        <strong>Email:</strong> <a href={`mailto:${data.email}`}>{data.email}</a>
+                      </span>
+                    </li>
+                  )}
                 </ul>
 
                 <div className="hero__cta">

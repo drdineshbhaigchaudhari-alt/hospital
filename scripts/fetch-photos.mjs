@@ -33,6 +33,7 @@ const FORCE = process.argv.includes('--force');
 // logo on someone's coat out of frame.
 const ASSETS = [
   // ---- consultant portraits (5:6) --------------------------------
+  // dr-pravin.jpg is an AI-generated portrait, not a stock photo - do not fetch.
   [19438565, 'doctors/dr-arvind-deshmukh.jpg', 1000, 1200, 'north', [0.14, 0, 0.72, 0.78]],
   [32428850, 'doctors/dr-shalini-iyer.jpg', 1000, 1200, 'north'],
   [6762876, 'doctors/dr-rajeev-nandan.jpg', 1000, 1200, 'north', [0.14, 0, 0.72, 0.88]],
@@ -105,7 +106,7 @@ const ASSETS = [
   [27975008, 'blog/newborn.jpg', 1200, 675, 'centre'],
 
   // ---- other ------------------------------------------------------
-  [9741487, 'misc/about-hospital.jpg', 1200, 900, 'centre'],
+  // misc/about-hospital.jpg is the hospital's own branded building photo, not a Pexels download.
   [14558560, 'misc/opd-scene.jpg', 1200, 800, 'centre']
 ];
 

@@ -4,7 +4,7 @@ A complete multi-speciality hospital website: **React (Vite) front end + Node/Ex
 built in the style of Indian hospital sites such as Amar Hospital and Saroj Hospital, with
 original content and original artwork.
 
-- 13 routes, 16 departments, 12 consultant profiles, 6 health packages, 12 facilities,
+- 13 routes, 17 departments, 13 consultant profiles, 6 health packages, 12 facilities,
   8 health-library articles
 - 24x7 emergency top bar, mega-menu navigation, hero slider, quick-action strip, animated
   stat counters, doctor carousel, package cards, testimonial slider, insurer marquee, FAQ
@@ -78,7 +78,7 @@ hospital/
 |---|---|
 | `/` | Home — hero slider, quick actions, about, stats, departments, doctors, why-us, facilities, packages, testimonials, insurers, articles, FAQ |
 | `/about` | Story, values, milestones, accreditations, testimonials |
-| `/specialities` · `/specialities/:slug` | All 16 departments · department detail with its consultants |
+| `/specialities` · `/specialities/:slug` | All 17 departments · department detail with its consultants |
 | `/doctors` · `/doctors/:slug` | Searchable panel (name / department / focus) · full profile |
 | `/facilities` | Infrastructure, room categories and tariff guidance, patient services |
 | `/health-packages` | Six preventive packages, preparation guidance, package FAQ |

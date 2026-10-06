@@ -38,8 +38,8 @@ export default function Contact() {
   const [result, setResult] = useState(null);
 
   useSeo(
-    'Contact & Directions | LifeV 24 Care Hospital, New Delhi',
-    'Address, emergency and ambulance numbers, OPD timings and directions to LifeV 24 Care Hospital, Sector 12, New Delhi. Send us a message online.'
+    'Contact & Directions | LifeV 24 Care Hospital, Surat',
+    'Address, emergency and ambulance numbers, OPD timings and directions to LifeV 24 Care Hospital, Anand Mahal Road, Surat. Send us a message online.'
   );
   useReveal();
 
@@ -242,8 +242,8 @@ export default function Contact() {
             <div className="side-card side-card--navy">
               <h3>How to reach us</h3>
               <p>
-                We are on Health City Road, about 400 metres from the Ring Road crossing. The nearest metro
-                station is a ten-minute auto ride away, and free patient parking is available in the basement.
+                We are at Plot No. 178 on Anand Mahal Road, near the Government Girls School. Autos and city
+                buses stop close by, and free patient parking is available in the basement.
                 Ambulance access is from the rear gate, which stays open all night.
               </p>
             </div>
