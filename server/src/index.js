@@ -56,9 +56,22 @@ app.use('/api', formRoutes);
 // ---- Serve the built React app in production ----
 const clientDist = path.resolve(__dirname, '../../client/dist');
 if (fs.existsSync(clientDist)) {
-  app.use(express.static(clientDist, { maxAge: isProd ? '7d' : 0 }));
+  // Only Vite's hashed /assets files are safe to cache long-term. index.html and
+  // /images keep fixed names, so browsers must revalidate them or they show stale content.
+  app.use(
+    express.static(clientDist, {
+      setHeaders(res, filePath) {
+        if (isProd && filePath.includes(`${path.sep}assets${path.sep}`)) {
+          res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
+        } else {
+          res.setHeader('Cache-Control', 'no-cache');
+        }
+      }
+    })
+  );
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api')) return next();
+    res.setHeader('Cache-Control', 'no-cache');
     res.sendFile(path.join(clientDist, 'index.html'));
   });
 }
